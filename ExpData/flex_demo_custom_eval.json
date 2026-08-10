@@ -1,0 +1,1755 @@
+[
+  {
+    "task_id": "flex_depth_offset_prompt_07517",
+    "scene_name": "scene_airport_jet",
+    "image_path": "./flex_demo_custom/scene_airport_jet.jpg",
+    "caption": "Style: Cinematic Photorealistic. A scene of airport jet bridge corridor, featuring waiting areas, luggage carts, and structured overhead beams. The composition uses a vertical landmark rising above a low foreground. Lighting is defined by wet street reflections after heavy rain, with frost and condensation on glass surfaces. Surface and prop detail include glass reflections, brushed metal edges, and visible floor texture. Secondary landmarks include a glass partition catching light on the left and a lit sign or display panel on the right. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while tilting down toward near-ground detail, revealing foreground texture, lower terrain, floor markings, or near-object detail.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "depth_offset": 1.28,
+    "vergence_deg": 20.1
+  },
+  {
+    "task_id": "flex_height_offset_prompt_04808",
+    "scene_name": "scene_weathered_observatory_2",
+    "image_path": "./flex_demo_custom/scene_weathered_observatory_2.jpg",
+    "caption": "Style: Editorial Photography. A scene of weathered observatory on a dry plateau, featuring sand ripples, broken walls, and a low sun. The composition uses a near-waterline view with reflections stretching into depth. Lighting is defined by hard midday sunlight with crisp shadow edges, with dark rain clouds with a bright horizon line. Surface and prop detail include basalt, glowing cracks, smoke, and cooled volcanic crust. Secondary landmarks include a secondary path branching left and a broken arch on the right side. The camera moves forward slightly, revealing depth, foreground texture, and the main subject. The camera then pans left, revealing a secondary path branching left. The camera then pans right, revealing a broken arch on the right side.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "w",
+      "wl"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wl"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "height_offset": 1.89,
+    "pitch_deg": -14.0
+  },
+  {
+    "task_id": "flex_converging_prompt_05038",
+    "scene_name": "scene_green_ravine",
+    "image_path": "./flex_demo_custom/scene_green_ravine.jpg",
+    "caption": "Style: Urban Photography. A scene of green ravine with a narrow root bridge, featuring a winding path with landmarks on both sides. The composition uses a central reflective surface that doubles the scene depth. Lighting is defined by misty dawn light diffused through haze, with small glowing particles that remain physically plausible. Surface and prop detail include field grass, distant fences, gravel paths, and low sun glare. Secondary landmarks include wet rocks in the left foreground and a dense group of trees on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a dense group of trees on the right. The camera then moves forward while panning left, revealing wet rocks in the left foreground.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "w",
+      "wl"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wl"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "start_baseline": 2.55,
+    "end_baseline": 0.68,
+    "start_vergence_deg": 7.5,
+    "end_vergence_deg": 51.7
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_05820",
+    "scene_name": "scene_stormbattered_lighthouse",
+    "image_path": "./flex_demo_custom/scene_stormbattered_lighthouse.jpg",
+    "caption": "Style: Architectural Photography. A scene of storm-battered lighthouse on black coastal rocks, featuring boats, nets, weathered posts, and rippled water. The composition uses a quiet negative-space composition around a single realistic subject. Lighting is defined by subtle rim light on wet or metallic surfaces, with thin fog drifting through the background. Surface and prop detail include rain puddles, neon reflections, glass panels, and dark asphalt. Secondary landmarks include a low wall or railing on the left and a small bridge leading to the right. The camera moves forward slightly, revealing depth, foreground texture, and the main subject. The camera then pans left, revealing a low wall or railing on the left. The camera then pans right, revealing a small bridge leading to the right.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "depth_offset": 1.04,
+    "vergence_deg": 24.3
+  },
+  {
+    "task_id": "flex_height_offset_prompt_04315",
+    "scene_name": "scene_abandoned_mining",
+    "image_path": "./flex_demo_custom/scene_abandoned_mining.jpg",
+    "caption": "Style: Editorial Photography. A scene of abandoned mining camp among red rocks, featuring road markings, power lines, and weathered signs. The composition uses a vertical landmark rising above a low foreground. Lighting is defined by warm golden-hour sunlight with long shadows, with windblown sand or dry dust near the ground. Surface and prop detail include weathered paint, old signage, crates, and stacked objects. Secondary landmarks include a partially visible vehicle on the left and a broken arch on the right side. The camera moves right while panning left across the broad layout, revealing a partially visible vehicle on the left. The camera then moves forward while tilting down to reveal lower terrain details, revealing foreground texture, lower terrain, floor markings, or near-object detail.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "height_offset": 2.22,
+    "pitch_deg": -10.0
+  },
+  {
+    "task_id": "flex_height_offset_prompt_00771",
+    "scene_name": "scene_sunken_shipwreck_2",
+    "image_path": "./flex_demo_custom/scene_sunken_shipwreck_2.jpg",
+    "caption": "Style: Photorealistic. A scene of sunken shipwreck interior, featuring caustic light patterns and suspended particles. The composition uses a low eye-level view with a strong foreground anchor. Lighting is defined by subtle rim light on wet or metallic surfaces, with rippling reflections on water or polished floor. Surface and prop detail include carbon fiber, white panels, instrument screens, and sealed hatches. Secondary landmarks include a broken column on the left side and a waterfall or water feature on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a waterfall or water feature on the right. The camera then moves forward while panning left, revealing a broken column on the left side.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "w",
+      "wl"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wl"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "height_offset": 2.04,
+    "pitch_deg": -9.8
+  },
+  {
+    "task_id": "flex_height_offset_prompt_05930",
+    "scene_name": "scene_salt_flat_2",
+    "image_path": "./flex_demo_custom/scene_salt_flat_2.jpg",
+    "caption": "Style: Detailed Matte Painting. A scene of salt flat with geometric water lines, featuring high detail distributed across the frame. The composition uses a vertical landmark rising above a low foreground. Lighting is defined by desert sunset light with orange dust in the air, with falling snow and cold air haze. Surface and prop detail include sand, carved stone, dry vegetation, and wind-smoothed surfaces. Secondary landmarks include a secondary path branching left and a small bridge leading to the right. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a small bridge leading to the right.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "w",
+      "wj"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wj"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "height_offset": 1.83,
+    "pitch_deg": -11.6
+  },
+  {
+    "task_id": "flex_converging_prompt_02103",
+    "scene_name": "scene_blue_lagoon",
+    "image_path": "./flex_demo_custom/scene_blue_lagoon.jpg",
+    "caption": "Style: Photorealistic. A scene of blue lagoon cave below the surface, featuring caustic light patterns and suspended particles. The composition uses a side-on view with lateral parallax landmarks. Lighting is defined by cool fluorescent interior light, with small glowing particles that remain physically plausible. Surface and prop detail include coral growth, suspended bubbles, worn stone, and blue-green water haze. Secondary landmarks include a low wall or railing on the left and a reflective glass wall on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a reflective glass wall on the right. The camera then moves forward while panning left, revealing a low wall or railing on the left.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "w",
+      "wj"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wj"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "start_baseline": 2.85,
+    "end_baseline": 0.38,
+    "start_vergence_deg": 10.7,
+    "end_vergence_deg": 35.1
+  },
+  {
+    "task_id": "flex_height_offset_prompt_02504",
+    "scene_name": "scene_ancient_tomb",
+    "image_path": "./flex_demo_custom/scene_ancient_tomb.jpg",
+    "caption": "Style: Realistic Game Environment. A scene of ancient tomb passage with carved reliefs, featuring historical props placed on both sides of a path. The composition uses a dense market-like composition with many small readable objects. Lighting is defined by misty dawn light diffused through haze, with thin fog drifting through the background. Surface and prop detail include wet stone, rough plaster, old wood grain, and small metal fixtures. Secondary landmarks include a hanging sign or banner on the left and a hidden doorway on the right wall. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a hidden doorway on the right wall. The camera then moves forward while panning left, revealing a hanging sign or banner on the left.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "s"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "s"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "height_offset": 1.84,
+    "pitch_deg": -14.1
+  },
+  {
+    "task_id": "flex_height_offset_prompt_01876",
+    "scene_name": "scene_rainy_cyberpunk",
+    "image_path": "./flex_demo_custom/scene_rainy_cyberpunk.jpg",
+    "caption": "Style: Night Photography. A scene of rainy cyberpunk alley, featuring traffic lights, glass towers, and layered building silhouettes. The composition uses an elevated map-like view while preserving realistic detail. Lighting is defined by twilight backlight separating the main silhouette, with quiet stillness with no visible weather. Surface and prop detail include weathered paint, old signage, crates, and stacked objects. Secondary landmarks include a set of control panels on the left and a line of pipes or cables on the right. The camera moves backward to widen the view, widening the view and clarifying the spatial layout. The camera then moves backward while panning left, revealing a set of control panels on the left. The camera then moves backward while panning right, revealing a line of pipes or cables on the right.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "wi"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wi"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "height_offset": 2.56,
+    "pitch_deg": -10.8
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_05313",
+    "scene_name": "scene_public_aquarium",
+    "image_path": "./flex_demo_custom/scene_public_aquarium.jpg",
+    "caption": "Style: Documentary Photography. A scene of public aquarium tunnel, featuring broken beams, silt, crates, and shafts of light. The composition uses an off-center composition with the main subject weighted to the right. Lighting is defined by subtle rim light on wet or metallic surfaces, with quiet stillness with no visible weather. Surface and prop detail include glass reflections, brushed metal edges, and visible floor texture. Secondary landmarks include a broken column on the left side and a broken arch on the right side. The camera moves forward while tilting up to reveal the vertical scale, revealing the upper structure, sky, ceiling, or distant vertical scale.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "s"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "s"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "depth_offset": 2.08,
+    "vergence_deg": 10.1
+  },
+  {
+    "task_id": "flex_height_offset_prompt_09771",
+    "scene_name": "scene_weathered_observatory_3",
+    "image_path": "./flex_demo_custom/scene_weathered_observatory_3.jpg",
+    "caption": "Style: Golden Hour Photography. A scene of weathered observatory on a dry plateau, featuring road markings, power lines, and weathered signs. The composition uses a near-waterline view with reflections stretching into depth. Lighting is defined by desert sunset light with orange dust in the air, with windblown sand or dry dust near the ground. Surface and prop detail include field grass, distant fences, gravel paths, and low sun glare. Secondary landmarks include a broken column on the left side and a rocky outcrop on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a rocky outcrop on the right. The camera then moves forward while panning left, revealing a broken column on the left side.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "w",
+      "wk"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wk"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "height_offset": 0.5,
+    "pitch_deg": -7.0
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_01824",
+    "scene_name": "scene_forest_research_2",
+    "image_path": "./flex_demo_custom/scene_forest_research_2.jpg",
+    "caption": "Style: Travel Photography. A scene of forest research camp seen from a ridge, featuring broad map-like organization without empty graphic whitespace. The composition uses a high-ceiling interior with visible overhead structure. Lighting is defined by soft overcast daylight with muted shadows, with windblown sand or dry dust near the ground. Surface and prop detail include rope, nets, wooden posts, boat hulls, and water reflections. Secondary landmarks include a partially visible vehicle on the left and distant lights on the right. The camera moves right while panning left across the broad layout, revealing a partially visible vehicle on the left. The camera then moves forward while tilting down to reveal lower terrain details, revealing foreground texture, lower terrain, floor markings, or near-object detail.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "s"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "s"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "baseline": 1.75,
+    "vergence_deg": 20.9
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_03811",
+    "scene_name": "scene_neonlit_subway_2",
+    "image_path": "./flex_demo_custom/scene_neonlit_subway_2.jpg",
+    "caption": "Style: Macro Photography. A scene of neon-lit subway entrance, featuring cobblestones, cafe tables, umbrellas, and warm shop light. The composition uses a compact tabletop composition with surrounding props. Lighting is defined by moonlit night lighting with cool highlights, with clear air with crisp edges and distant visibility. Surface and prop detail include tile, stainless steel, monitors, and clean plastic surfaces. Secondary landmarks include a hanging sign or banner on the left and a row of windows on the right. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a row of windows on the right.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "s"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "s"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "baseline": 1.2,
+    "vergence_deg": 36.8
+  },
+  {
+    "task_id": "flex_height_offset_prompt_07433",
+    "scene_name": "scene_remote_weather",
+    "image_path": "./flex_demo_custom/scene_remote_weather.jpg",
+    "caption": "Style: Fantasy Concept Art. A scene of remote weather station on a ridge, featuring prayer flags, stone steps, and distant snow fields. The composition uses a wide environmental shot with layered foreground, middle ground, and background. Lighting is defined by warm golden-hour sunlight with long shadows, with quiet stillness with no visible weather. Surface and prop detail include moss, chipped stone, fallen leaves, and damp soil. Secondary landmarks include a low wall or railing on the left and a dense group of trees on the right. The camera moves backward to widen the view, widening the view and clarifying the spatial layout. The camera then moves backward while panning left, revealing a low wall or railing on the left. The camera then moves backward while panning right, revealing a dense group of trees on the right.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "sl"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "sl"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "height_offset": 2.32,
+    "pitch_deg": -8.6
+  },
+  {
+    "task_id": "flex_converging_prompt_05539",
+    "scene_name": "scene_deepsea_observation_2",
+    "image_path": "./flex_demo_custom/scene_deepsea_observation_2.jpg",
+    "caption": "Style: Cinematic CGI. A scene of deep-sea observation window, featuring blue light shafts, bubbles, coral, and worn stone. The composition uses a dense market-like composition with many small readable objects. Lighting is defined by underwater caustic light filtering from above, with clear air with crisp edges and distant visibility. Surface and prop detail include carbon fiber, white panels, instrument screens, and sealed hatches. Secondary landmarks include a broken column on the left side and a line of pipes or cables on the right. The camera moves forward through the water, revealing depth, foreground texture, and the main subject. The camera then moves forward while tilting up through the light shafts, revealing the upper structure, sky, ceiling, or distant vertical scale. The camera then moves forward while panning right across side details, revealing a line of pipes or cables on the right.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "wl"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wl"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "start_baseline": 2.24,
+    "end_baseline": 0.18,
+    "start_vergence_deg": 9.8,
+    "end_vergence_deg": 42.6
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_00409",
+    "scene_name": "scene_curving_mountain_2",
+    "image_path": "./flex_demo_custom/scene_curving_mountain_2.jpg",
+    "caption": "Style: Detailed Matte Painting. A scene of curving mountain rice terraces, featuring tiny vehicles, roofs, fields, and landmarks on both sides. The composition uses a compact room composition with readable left and right details. Lighting is defined by misty dawn light diffused through haze, with dark rain clouds with a bright horizon line. Surface and prop detail include rail tracks, gravel, signal lights, and worn platform edges. Secondary landmarks include a low wall or railing on the left and distant lights on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing distant lights on the right. The camera then moves forward while panning left, revealing a low wall or railing on the left.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "baseline": 1.82,
+    "vergence_deg": 34.2
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_03598",
+    "scene_name": "scene_ancient_tree",
+    "image_path": "./flex_demo_custom/scene_ancient_tree.jpg",
+    "caption": "Style: Night Photography. A scene of ancient tree library with spiral stairs, featuring mist, small lights, cliffs, roots, and layered magical structures. The composition uses a balcony or overlook perspective with a visible drop in depth. Lighting is defined by misty dawn light diffused through haze, with quiet stillness with no visible weather. Surface and prop detail include moss, chipped stone, fallen leaves, and damp soil. Secondary landmarks include a broken column on the left side and a waterfall or water feature on the right. The camera moves backward to widen the view, widening the view and clarifying the spatial layout. The camera then moves backward while panning left, revealing a broken column on the left side. The camera then moves backward while panning right, revealing a waterfall or water feature on the right.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "depth_offset": 1.01,
+    "vergence_deg": 19.7
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_00106",
+    "scene_name": "style_rendering_cgi_2",
+    "image_path": "./flex_demo_custom/style_rendering_cgi_2.jpg",
+    "caption": "Style: 3D Rendering / CGI. A scene of coral canyon with a sandy channel, featuring curved glass, silhouettes of fish, and tiled walkway. The composition uses an off-center composition with the main subject weighted to the right. Lighting is defined by subtle rim light on wet or metallic surfaces, with rippling reflections on water or polished floor. Surface and prop detail include wet stone, rough plaster, old wood grain, and small metal fixtures. Secondary landmarks include a set of control panels on the left and equipment cases on the right side. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing equipment cases on the right side. The camera then moves forward while panning left, revealing a set of control panels on the left.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "s",
+      "sj"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "s",
+      "sj"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "baseline": 2.02,
+    "vergence_deg": 29.5
+  },
+  {
+    "task_id": "flex_converging_prompt_01403",
+    "scene_name": "scene_coastal_tunnel",
+    "image_path": "./flex_demo_custom/scene_coastal_tunnel.jpg",
+    "caption": "Style: Cinematic Photorealistic. A scene of coastal tunnel road opening to the sea, featuring rails, road markings, signal lights, and side barriers. The composition uses a close foreground object leading into a detailed background. Lighting is defined by wet street reflections after heavy rain, with dark rain clouds with a bright horizon line. Surface and prop detail include polished concrete, painted signs, cables, and practical lights. Secondary landmarks include a glass partition catching light on the left and a parked vehicle or cart on the right. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while tilting down toward near-ground detail, revealing foreground texture, lower terrain, floor markings, or near-object detail.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "w",
+      "wj"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wj"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "start_baseline": 2.26,
+    "end_baseline": 0.57,
+    "start_vergence_deg": 5.7,
+    "end_vergence_deg": 23.7
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_03257",
+    "scene_name": "scene_remote_weather_2",
+    "image_path": "./flex_demo_custom/scene_remote_weather_2.jpg",
+    "caption": "Style: Urban Photography. A scene of remote weather station on a ridge, featuring golden sunrise striking the upper peaks. The composition uses a low-angle architectural shot looking toward a roof or sky opening. Lighting is defined by foggy morning light with low contrast, with clear air with crisp edges and distant visibility. Surface and prop detail include weathered paint, old signage, crates, and stacked objects. Secondary landmarks include a secondary path branching left and a dense group of trees on the right. The camera moves forward while tilting up to reveal the vertical scale, revealing the upper structure, sky, ceiling, or distant vertical scale.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "sl"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "sl"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "baseline": 1.87,
+    "vergence_deg": 23.4
+  },
+  {
+    "task_id": "flex_converging_prompt_01290",
+    "scene_name": "scene_childrens_playroom",
+    "image_path": "./flex_demo_custom/scene_childrens_playroom.jpg",
+    "caption": "Style: Cinematic Photorealistic. A scene of children's playroom with a round window, featuring soft dust, glass reflections, and carefully arranged surfaces. The composition uses a compact tabletop composition with surrounding props. Lighting is defined by cool fluorescent interior light, with rippling reflections on water or polished floor. Surface and prop detail include linen fabric, ceramic objects, warm wood, and soft dust. Secondary landmarks include a sculptural object on the left and a hidden doorway on the right wall. The camera moves forward toward the object, revealing depth, foreground texture, and the main subject. The camera then moves right while panning left to keep the object framed, revealing a sculptural object on the left.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "start_baseline": 2.09,
+    "end_baseline": 0.57,
+    "start_vergence_deg": 10.7,
+    "end_vergence_deg": 30.9
+  },
+  {
+    "task_id": "flex_converging_prompt_00964",
+    "scene_name": "scene_spice_shop",
+    "image_path": "./flex_demo_custom/scene_spice_shop.jpg",
+    "caption": "Style: Interior Photography. A scene of spice shop interior with open sacks, featuring sterile surfaces, cables, monitors, and metal fixtures. The composition uses an elevated map-like view while preserving realistic detail. Lighting is defined by warm tungsten light mixed with cool window light, with rippling reflections on water or polished floor. Surface and prop detail include marble, framed art, soft upholstery, and museum-grade lighting. Secondary landmarks include a line of lamps on the left side and a row of windows on the right. The camera moves forward slightly, revealing depth, foreground texture, and the main subject. The camera then pans left, revealing a line of lamps on the left side. The camera then pans right, revealing a row of windows on the right.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "wj"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wj"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "start_baseline": 2.12,
+    "end_baseline": 0.1,
+    "start_vergence_deg": 8.1,
+    "end_vergence_deg": 26.3
+  },
+  {
+    "task_id": "flex_height_offset_prompt_08837",
+    "scene_name": "scene_submerged_temple",
+    "image_path": "./flex_demo_custom/scene_submerged_temple.jpg",
+    "caption": "Style: Realistic Game Environment. A scene of submerged temple gate, featuring green water haze, cables, pressure windows, and small lights. The composition uses a bridge-centered view with side railings as depth cues. Lighting is defined by cool fluorescent interior light, with small glowing particles that remain physically plausible. Surface and prop detail include glass reflections, brushed metal edges, and visible floor texture. Secondary landmarks include a low wall or railing on the left and a waterfall or water feature on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a waterfall or water feature on the right. The camera then moves forward while panning left, revealing a low wall or railing on the left.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "w",
+      "wi"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wi"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "height_offset": 1.64,
+    "pitch_deg": -14.3
+  },
+  {
+    "task_id": "flex_height_offset_prompt_06252",
+    "scene_name": "scene_modern_art",
+    "image_path": "./flex_demo_custom/scene_modern_art.jpg",
+    "caption": "Style: Photorealistic. A scene of modern art gallery with sculpture pedestals, featuring warm public lighting with visible architectural rhythm. The composition uses a doorway-framed interior view with deep room perspective. Lighting is defined by low-light interior illumination from lamps and windows, with clear air with crisp edges and distant visibility. Surface and prop detail include weathered paint, old signage, crates, and stacked objects. Secondary landmarks include a line of lamps on the left side and a row of windows on the right. The camera moves forward slightly, revealing depth, foreground texture, and the main subject. The camera then pans left, revealing a line of lamps on the left side. The camera then pans right, revealing a row of windows on the right.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "wl"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wl"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "height_offset": 1.44,
+    "pitch_deg": -5.4
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_08785",
+    "scene_name": "scene_hidden_waterfall",
+    "image_path": "./flex_demo_custom/scene_hidden_waterfall.jpg",
+    "caption": "Style: Cinematic Photorealistic. A scene of hidden waterfall behind a stone gate, featuring cinematic depth with fantasy elements grounded in real materials. The composition uses a compact tabletop composition with surrounding props. Lighting is defined by moonlit night lighting with cool highlights, with small glowing particles that remain physically plausible. Surface and prop detail include basalt, glowing cracks, smoke, and cooled volcanic crust. Secondary landmarks include a hanging sign or banner on the left and a waterfall or water feature on the right. The camera moves forward while tilting up to reveal the vertical scale, revealing the upper structure, sky, ceiling, or distant vertical scale.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "wi"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wi"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "baseline": 1.55,
+    "vergence_deg": 29.7
+  },
+  {
+    "task_id": "flex_height_offset_prompt_09977",
+    "scene_name": "scene_old_library",
+    "image_path": "./flex_demo_custom/scene_old_library.jpg",
+    "caption": "Style: Natural Light Photography. A scene of old library aisle with ladders and green lamps, featuring warm public lighting with visible architectural rhythm. The composition uses a high-ceiling interior with visible overhead structure. Lighting is defined by airport or station lighting reflected on polished floors, with fine ash or powder settled on nearby objects. Surface and prop detail include marble, framed art, soft upholstery, and museum-grade lighting. Secondary landmarks include a sculptural object on the left and a lit sign or display panel on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a lit sign or display panel on the right. The camera then moves forward while panning left, revealing a sculptural object on the left.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "w",
+      "wl"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wl"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "height_offset": 2.29,
+    "pitch_deg": -10.4
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_03582",
+    "scene_name": "scene_floating_islands",
+    "image_path": "./flex_demo_custom/scene_floating_islands.jpg",
+    "caption": "Style: Detailed Matte Painting. A scene of floating islands above a sea of clouds, featuring glowing crystals, moss, carved stone, and drifting particles. The composition uses a central reflective surface that doubles the scene depth. Lighting is defined by forest canopy light broken into small shafts, with small glowing particles that remain physically plausible. Surface and prop detail include wet stone, rough plaster, old wood grain, and small metal fixtures. Secondary landmarks include a secondary path branching left and a waterfall or water feature on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a waterfall or water feature on the right. The camera then moves forward while panning left, revealing a secondary path branching left.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "s"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "s"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "baseline": 1.2,
+    "vergence_deg": 19.7
+  },
+  {
+    "task_id": "flex_height_offset_prompt_02646",
+    "scene_name": "scene_underwater_cable",
+    "image_path": "./flex_demo_custom/scene_underwater_cable.jpg",
+    "caption": "Style: Documentary Photography. A scene of underwater cable station, featuring curved glass, silhouettes of fish, and tiled walkway. The composition uses a high vantage point looking down into the space. Lighting is defined by blue-hour ambient light with small practical lamps, with quiet stillness with no visible weather. Surface and prop detail include weathered paint, old signage, crates, and stacked objects. Secondary landmarks include a low wall or railing on the left and a waterfall or water feature on the right. The camera moves forward while tilting up to reveal the vertical scale, revealing the upper structure, sky, ceiling, or distant vertical scale.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "height_offset": 1.79,
+    "pitch_deg": -5.9
+  },
+  {
+    "task_id": "flex_height_offset_prompt_06543",
+    "scene_name": "scene_hospital_operating",
+    "image_path": "./flex_demo_custom/scene_hospital_operating.jpg",
+    "caption": "Style: Historical Scene Illustration. A scene of hospital operating room after hours, featuring clean floor reflections, overhead structure, and side displays. The composition uses a doorway-framed interior view with deep room perspective. Lighting is defined by cool fluorescent interior light, with rippling reflections on water or polished floor. Surface and prop detail include glass reflections, brushed metal edges, and visible floor texture. Secondary landmarks include arched windows on the left and a row of windows on the right. The camera moves forward slightly, revealing depth, foreground texture, and the main subject. The camera then pans left, revealing arched windows on the left. The camera then pans right, revealing a row of windows on the right.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "w",
+      "wi"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wi"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "height_offset": 1.98,
+    "pitch_deg": -6.1
+  },
+  {
+    "task_id": "flex_converging_prompt_00009",
+    "scene_name": "scene_curving_mountain",
+    "image_path": "./flex_demo_custom/scene_curving_mountain.jpg",
+    "caption": "Style: Photorealistic. A scene of curving mountain rice terraces, featuring roads, paths, water, small buildings, and readable spatial layout. The composition uses a vertical landmark rising above a low foreground. Lighting is defined by warm golden-hour sunlight with long shadows, with windblown sand or dry dust near the ground. Surface and prop detail include sand, carved stone, dry vegetation, and wind-smoothed surfaces. Secondary landmarks include wet rocks in the left foreground and a secondary building on the right. The camera moves right while panning left across the broad layout, revealing wet rocks in the left foreground. The camera then moves forward while tilting down to reveal lower terrain details, revealing foreground texture, lower terrain, floor markings, or near-object detail.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "start_baseline": 2.21,
+    "end_baseline": 0.75,
+    "start_vergence_deg": 11.1,
+    "end_vergence_deg": 29.5
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_02664",
+    "scene_name": "scene_compact_music",
+    "image_path": "./flex_demo_custom/scene_compact_music.jpg",
+    "caption": "Style: Photorealistic. A scene of compact music studio with guitars, featuring warm wood, textiles, small props, and window light. The composition uses a high vantage point looking down into the space. Lighting is defined by museum skylight with soft beams on the floor, with quiet stillness with no visible weather. Surface and prop detail include linen fabric, ceramic objects, warm wood, and soft dust. Secondary landmarks include a side table or workbench on the left and a hidden doorway on the right wall. The camera moves forward toward the object, revealing depth, foreground texture, and the main subject. The camera then moves right while panning left to keep the object framed, revealing a side table or workbench on the left.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "depth_offset": 0.72,
+    "vergence_deg": 15.4
+  },
+  {
+    "task_id": "flex_converging_prompt_02060",
+    "scene_name": "scene_mosscovered_stone_2",
+    "image_path": "./flex_demo_custom/scene_mosscovered_stone_2.jpg",
+    "caption": "Style: Natural Light Photography. A scene of moss-covered stone well close to the camera, featuring table edges, side objects, and a soft room behind the subject. The composition uses a compact room composition with readable left and right details. Lighting is defined by dusty workshop light from a high window, with fine ash or powder settled on nearby objects. Surface and prop detail include brass, leather, paper maps, wax, and scratched glass. Secondary landmarks include a side table or workbench on the left and a row of windows on the right. The camera moves forward toward the object, revealing depth, foreground texture, and the main subject. The camera then moves right while panning left to keep the object framed, revealing a side table or workbench on the left.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "w",
+      "wk"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wk"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "start_baseline": 2.76,
+    "end_baseline": 0.96,
+    "start_vergence_deg": 9.7,
+    "end_vergence_deg": 38.2
+  },
+  {
+    "task_id": "flex_height_offset_prompt_08317",
+    "scene_name": "scene_sunken_shipwreck_3",
+    "image_path": "./flex_demo_custom/scene_sunken_shipwreck_3.jpg",
+    "caption": "Style: Documentary Photography. A scene of sunken shipwreck interior, featuring green water haze, cables, pressure windows, and small lights. The composition uses a courtyard view with surrounding walls and a central object. Lighting is defined by subtle rim light on wet or metallic surfaces, with clear air with crisp edges and distant visibility. Surface and prop detail include glass reflections, brushed metal edges, and visible floor texture. Secondary landmarks include a glass partition catching light on the left and a waterfall or water feature on the right. The camera moves forward while tilting up to reveal the vertical scale, revealing the upper structure, sky, ceiling, or distant vertical scale.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "w",
+      "wl"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wl"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "height_offset": 1.73,
+    "pitch_deg": -8.6
+  },
+  {
+    "task_id": "flex_converging_prompt_00117",
+    "scene_name": "scene_lonely_desert",
+    "image_path": "./flex_demo_custom/scene_lonely_desert.jpg",
+    "caption": "Style: Golden Hour Photography. A scene of lonely desert gas station at dusk, featuring twin moons or pale evening sky above a quiet horizon. The composition uses a central reflective surface that doubles the scene depth. Lighting is defined by clear alpine light with sharp distant visibility, with subtle heat shimmer above stone, asphalt, or lava. Surface and prop detail include field grass, distant fences, gravel paths, and low sun glare. Secondary landmarks include a low wall or railing on the left and a rocky outcrop on the right. The camera moves forward slightly, revealing depth, foreground texture, and the main subject. The camera then pans left, revealing a low wall or railing on the left. The camera then pans right, revealing a rocky outcrop on the right.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "s"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "s"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "start_baseline": 2.79,
+    "end_baseline": 0.59,
+    "start_vergence_deg": 19.2,
+    "end_vergence_deg": 44.0
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_01291",
+    "scene_name": "scene_weathered_observatory_4",
+    "image_path": "./flex_demo_custom/scene_weathered_observatory_4.jpg",
+    "caption": "Style: Travel Photography. A scene of weathered observatory on a dry plateau, featuring a distant structure partially lost in haze. The composition uses a cave-mouth composition with bright exterior light beyond. Lighting is defined by clear alpine light with sharp distant visibility, with subtle heat shimmer above stone, asphalt, or lava. Surface and prop detail include stone arches, banners, carved reliefs, and torch brackets. Secondary landmarks include a secondary path branching left and a side corridor opening on the right. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while tilting down toward near-ground detail, revealing foreground texture, lower terrain, floor markings, or near-object detail.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "s",
+      "sl"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "s",
+      "sl"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "baseline": 1.65,
+    "vergence_deg": 24.1
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_03483",
+    "scene_name": "scene_lunar_greenhouse",
+    "image_path": "./flex_demo_custom/scene_lunar_greenhouse.jpg",
+    "caption": "Style: Cinematic CGI. A scene of lunar greenhouse dome, featuring instrument panels, sealed hatches, warning lights, and stars. The composition uses a quiet negative-space composition around a single realistic subject. Lighting is defined by moonlit night lighting with cool highlights, with dust motes visible in angled light. Surface and prop detail include glass reflections, brushed metal edges, and visible floor texture. Secondary landmarks include a set of control panels on the left and a lit sign or display panel on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a lit sign or display panel on the right. The camera then moves forward while panning left, revealing a set of control panels on the left.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "sl"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "sl"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "depth_offset": 1.39,
+    "vergence_deg": 19.3
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_00750",
+    "scene_name": "scene_abandoned_lifeboat",
+    "image_path": "./flex_demo_custom/scene_abandoned_lifeboat.jpg",
+    "caption": "Style: Macro Photography. A scene of abandoned lifeboat station near crashing surf, featuring storm clouds opening to a thin band of sunlight. The composition uses a cave-mouth composition with bright exterior light beyond. Lighting is defined by blue-hour ambient light with small practical lamps, with thin fog drifting through the background. Surface and prop detail include glass reflections, brushed metal edges, and visible floor texture. Secondary landmarks include a water channel along the left side and a secondary building on the right. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while tilting down toward near-ground detail, revealing foreground texture, lower terrain, floor markings, or near-object detail.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "w",
+      "wk"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wk"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "depth_offset": 0.54,
+    "vergence_deg": 14.8
+  },
+  {
+    "task_id": "flex_converging_prompt_09641",
+    "scene_name": "scene_snow_cabin",
+    "image_path": "./flex_demo_custom/scene_snow_cabin.jpg",
+    "caption": "Style: Architectural Photography. A scene of snow cabin beneath northern lights, featuring pine silhouettes, smoke from a chimney, and still water. The composition uses a telephoto-like compressed view of repeating structures. Lighting is defined by snow-reflected daylight with cool blue shadows, with thin fog drifting through the background. Surface and prop detail include snow crust, ice crystals, exposed rock, and cold fabric surfaces. Secondary landmarks include wet rocks in the left foreground and a dense group of trees on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a dense group of trees on the right. The camera then moves forward while panning left, revealing wet rocks in the left foreground.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "w",
+      "wk"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wk"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "start_baseline": 2.23,
+    "end_baseline": 0.33,
+    "start_vergence_deg": 9.2,
+    "end_vergence_deg": 20.0
+  },
+  {
+    "task_id": "flex_height_offset_prompt_02927",
+    "scene_name": "scene_underwater_research",
+    "image_path": "./flex_demo_custom/scene_underwater_research.jpg",
+    "caption": "Style: Cinematic Photorealistic. A scene of underwater research pod near coral, featuring blue light shafts, bubbles, coral, and worn stone. The composition uses a compact tabletop composition with surrounding props. Lighting is defined by underwater caustic light filtering from above, with small glowing particles that remain physically plausible. Surface and prop detail include glass reflections, brushed metal edges, and visible floor texture. Secondary landmarks include a broken column on the left side and a line of pipes or cables on the right. The camera moves forward through the water, revealing depth, foreground texture, and the main subject. The camera then moves forward while tilting up through the light shafts, revealing the upper structure, sky, ceiling, or distant vertical scale. The camera then moves forward while panning right across side details, revealing a line of pipes or cables on the right.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "s"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "s"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "height_offset": 1.01,
+    "pitch_deg": -14.3
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_06912",
+    "scene_name": "scene_fortified_harbor",
+    "image_path": "./flex_demo_custom/scene_fortified_harbor.jpg",
+    "caption": "Style: Cinematic Photorealistic. A scene of fortified harbor wall with cannons, featuring historical props placed on both sides of a path. The composition uses a compact room composition with readable left and right details. Lighting is defined by misty dawn light diffused through haze, with fine ash or powder settled on nearby objects. Surface and prop detail include sand, carved stone, dry vegetation, and wind-smoothed surfaces. Secondary landmarks include a low wall or railing on the left and a side corridor opening on the right. The camera moves backward to widen the view, widening the view and clarifying the spatial layout. The camera then moves backward while panning left, revealing a low wall or railing on the left. The camera then moves backward while panning right, revealing a side corridor opening on the right.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "s",
+      "sj"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "s",
+      "sj"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "baseline": 2.23,
+    "vergence_deg": 20.2
+  },
+  {
+    "task_id": "flex_converging_prompt_04342",
+    "scene_name": "scene_ancient_ruins",
+    "image_path": "./flex_demo_custom/scene_ancient_ruins.jpg",
+    "caption": "Style: Natural Light Photography. A scene of ancient ruins layout in a dry valley, featuring high detail distributed across the frame. The composition uses a long platform view with repeating columns and lights. Lighting is defined by desert sunset light with orange dust in the air, with thin clouds casting moving patches of light. Surface and prop detail include rail tracks, gravel, signal lights, and worn platform edges. Secondary landmarks include a water channel along the left side and distant lights on the right. The camera moves forward while tilting down from the high viewpoint, revealing foreground texture, lower terrain, floor markings, or near-object detail.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "sj"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "sj"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "start_baseline": 2.08,
+    "end_baseline": 0.32,
+    "start_vergence_deg": 5.0,
+    "end_vergence_deg": 30.8
+  },
+  {
+    "task_id": "flex_height_offset_prompt_05573",
+    "scene_name": "scene_ancient_market",
+    "image_path": "./flex_demo_custom/scene_ancient_market.jpg",
+    "caption": "Style: Photorealistic. A scene of ancient market street with clay walls, featuring dust, candlelight, fragments, and layered background ruins. The composition uses a long platform view with repeating columns and lights. Lighting is defined by warm golden-hour sunlight with long shadows, with clear air with crisp edges and distant visibility. Surface and prop detail include stone arches, banners, carved reliefs, and torch brackets. Secondary landmarks include a narrow stairway climbing on the left and a broken arch on the right side. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a broken arch on the right side.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "height_offset": 1.15,
+    "pitch_deg": -13.8
+  },
+  {
+    "task_id": "flex_converging_prompt_00344",
+    "scene_name": "scene_salt_flat",
+    "image_path": "./flex_demo_custom/scene_salt_flat.jpg",
+    "caption": "Style: Cinematic Game Art. A scene of salt flat with mirror-like water, featuring orange dust, sparse shrubs, carved stone, and long shadows. The composition uses a room-corner view showing two walls and a clear floor plane. Lighting is defined by hard midday sunlight with crisp shadow edges, with quiet stillness with no visible weather. Surface and prop detail include field grass, distant fences, gravel paths, and low sun glare. Secondary landmarks include a broken column on the left side and a secondary building on the right. The camera moves forward slightly, revealing depth, foreground texture, and the main subject. The camera then pans left, revealing a broken column on the left side. The camera then pans right, revealing a secondary building on the right.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "start_baseline": 2.01,
+    "end_baseline": 0.65,
+    "start_vergence_deg": 8.4,
+    "end_vergence_deg": 28.7
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_02286",
+    "scene_name": "scene_public_aquarium_2",
+    "image_path": "./flex_demo_custom/scene_public_aquarium_2.jpg",
+    "caption": "Style: Documentary Photography. A scene of public aquarium tunnel, featuring curved glass, silhouettes of fish, and tiled walkway. The composition uses a symmetrical central-axis composition with varied side details. Lighting is defined by underwater caustic light filtering from above, with clear air with crisp edges and distant visibility. Surface and prop detail include glass reflections, brushed metal edges, and visible floor texture. Secondary landmarks include a low wall or railing on the left and a waterfall or water feature on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a waterfall or water feature on the right. The camera then moves forward while panning left, revealing a low wall or railing on the left.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "w",
+      "wk"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wk"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "baseline": 1.27,
+    "vergence_deg": 18.3
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_04506",
+    "scene_name": "scene_ancient_tomb_2",
+    "image_path": "./flex_demo_custom/scene_ancient_tomb_2.jpg",
+    "caption": "Style: Historical Scene Illustration. A scene of ancient tomb passage with carved reliefs, featuring a central passage or staircase leading deeper into the site. The composition uses a side-on view with lateral parallax landmarks. Lighting is defined by moonlit night lighting with cool highlights, with clear air with crisp edges and distant visibility. Surface and prop detail include brass, leather, paper maps, wax, and scratched glass. Secondary landmarks include a narrow stairway climbing on the left and a cluster of lanterns to the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a cluster of lanterns to the right. The camera then moves forward while panning left, revealing a narrow stairway climbing on the left.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "wl"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wl"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "baseline": 1.38,
+    "vergence_deg": 20.1
+  },
+  {
+    "task_id": "flex_converging_prompt_04061",
+    "scene_name": "scene_sunken_shipwreck",
+    "image_path": "./flex_demo_custom/scene_sunken_shipwreck.jpg",
+    "caption": "Style: Environment Concept Art. A scene of sunken shipwreck interior, featuring blue light shafts, bubbles, coral, and worn stone. The composition uses a road-shoulder perspective with foreground gravel and distant signs. Lighting is defined by underwater caustic light filtering from above, with clear air with crisp edges and distant visibility. Surface and prop detail include coral growth, suspended bubbles, worn stone, and blue-green water haze. Secondary landmarks include a water channel along the left side and a line of pipes or cables on the right. The camera moves forward through the water, revealing depth, foreground texture, and the main subject. The camera then moves forward while tilting up through the light shafts, revealing the upper structure, sky, ceiling, or distant vertical scale. The camera then moves forward while panning right across side details, revealing a line of pipes or cables on the right.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "w",
+      "wk"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wk"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "start_baseline": 3.31,
+    "end_baseline": 0.1,
+    "start_vergence_deg": 5.0,
+    "end_vergence_deg": 34.6
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_03432",
+    "scene_name": "scene_deepsea_observation",
+    "image_path": "./flex_demo_custom/scene_deepsea_observation.jpg",
+    "caption": "Style: Cinematic Photorealistic. A scene of deep-sea observation window, featuring kelp strands, sandy ground, and moving fish groups. The composition uses a low eye-level view with a strong foreground anchor. Lighting is defined by blue-hour ambient light with small practical lamps, with clear air with crisp edges and distant visibility. Surface and prop detail include coral growth, suspended bubbles, worn stone, and blue-green water haze. Secondary landmarks include a low wall or railing on the left and a broken arch on the right side. The camera moves forward slightly, revealing depth, foreground texture, and the main subject. The camera then pans left, revealing a low wall or railing on the left. The camera then pans right, revealing a broken arch on the right side.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "depth_offset": 1.11,
+    "vergence_deg": 13.1
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_06924",
+    "scene_name": "scene_mossy_shrine",
+    "image_path": "./flex_demo_custom/scene_mossy_shrine.jpg",
+    "caption": "Style: Landscape Photography. A scene of mossy shrine in a dense pine forest, featuring glowing fungi or subtle fireflies in the distance. The composition uses a quiet negative-space composition around a single realistic subject. Lighting is defined by misty dawn light diffused through haze, with quiet stillness with no visible weather. Surface and prop detail include wet stone, rough plaster, old wood grain, and small metal fixtures. Secondary landmarks include wet rocks in the left foreground and a rocky outcrop on the right. The camera moves backward to widen the view, widening the view and clarifying the spatial layout. The camera then moves backward while panning left, revealing wet rocks in the left foreground. The camera then moves backward while panning right, revealing a rocky outcrop on the right.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "s",
+      "sl"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "s",
+      "sl"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "baseline": 1.67,
+    "vergence_deg": 29.8
+  },
+  {
+    "task_id": "flex_height_offset_prompt_01743",
+    "scene_name": "scene_empty_subway",
+    "image_path": "./flex_demo_custom/scene_empty_subway.jpg",
+    "caption": "Style: Cinematic Photorealistic. A scene of empty subway car with dark windows, featuring waiting areas, luggage carts, and structured overhead beams. The composition uses a low eye-level view with a strong foreground anchor. Lighting is defined by soft overcast daylight with muted shadows, with dark rain clouds with a bright horizon line. Surface and prop detail include polished concrete, painted signs, cables, and practical lights. Secondary landmarks include a partially visible vehicle on the left and a row of windows on the right. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a row of windows on the right.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "height_offset": 1.53,
+    "pitch_deg": -5.6
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_07359",
+    "scene_name": "scene_shipyard_dry",
+    "image_path": "./flex_demo_custom/scene_shipyard_dry.jpg",
+    "caption": "Style: Cinematic Photorealistic. A scene of shipyard dry dock, featuring tool drawers, monitors, labels, and small industrial props. The composition uses a compact room composition with readable left and right details. Lighting is defined by laboratory task lighting with clean white highlights, with dust motes visible in angled light. Surface and prop detail include carbon fiber, white panels, instrument screens, and sealed hatches. Secondary landmarks include a side table or workbench on the left and a side corridor opening on the right. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a side corridor opening on the right.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "wk"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wk"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "baseline": 1.67,
+    "vergence_deg": 8.0
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_02045",
+    "scene_name": "scene_forest_research_3",
+    "image_path": "./flex_demo_custom/scene_forest_research_3.jpg",
+    "caption": "Style: Golden Hour Photography. A scene of forest research hut beside a creek, featuring moss, roots, fallen leaves, and water reflections. The composition uses an off-center composition with the main subject weighted to the left. Lighting is defined by moonlit night lighting with cool highlights, with quiet stillness with no visible weather. Surface and prop detail include clay, pottery tools, damp surfaces, and tall window light. Secondary landmarks include a low wall or railing on the left and a rocky outcrop on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a rocky outcrop on the right. The camera then moves forward while panning left, revealing a low wall or railing on the left.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "sj"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "sj"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "baseline": 1.15,
+    "vergence_deg": 19.4
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_03814",
+    "scene_name": "scene_forest_research",
+    "image_path": "./flex_demo_custom/scene_forest_research.jpg",
+    "caption": "Style: Natural Light Photography. A scene of forest research camp seen from a ridge, featuring broad map-like organization without empty graphic whitespace. The composition uses a close foreground object leading into a detailed background. Lighting is defined by misty dawn light diffused through haze, with thin fog drifting through the background. Surface and prop detail include snow crust, ice crystals, exposed rock, and cold fabric surfaces. Secondary landmarks include a low wall or railing on the left and a rocky outcrop on the right. The camera moves forward while tilting down from the high viewpoint, revealing foreground texture, lower terrain, floor markings, or near-object detail.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "sj"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "sj"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "depth_offset": 2.07,
+    "vergence_deg": 19.5
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_08179",
+    "scene_name": "scene_airport_jet_2",
+    "image_path": "./flex_demo_custom/scene_airport_jet_2.jpg",
+    "caption": "Style: Night Photography. A scene of airport jet bridge corridor, featuring polished floors, glass walls, signs, and distant runway lights. The composition uses a vertical landmark rising above a low foreground. Lighting is defined by cool fluorescent interior light, with dark rain clouds with a bright horizon line. Surface and prop detail include rain puddles, neon reflections, glass panels, and dark asphalt. Secondary landmarks include a set of control panels on the left and distant lights on the right. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing distant lights on the right.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "wl"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wl"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "depth_offset": 1.74,
+    "vergence_deg": 14.6
+  },
+  {
+    "task_id": "flex_height_offset_prompt_03258",
+    "scene_name": "scene_spacecraft_observation",
+    "image_path": "./flex_demo_custom/scene_spacecraft_observation.jpg",
+    "caption": "Style: Futuristic Architectural Visualization. A scene of spacecraft observation capsule facing Earth, featuring regolith, rover tracks, solar arrays, and habitat modules. The composition uses a natural frame created by cliffs, trees, arches, or doorways. Lighting is defined by subtle rim light on wet or metallic surfaces, with quiet stillness with no visible weather. Surface and prop detail include glass reflections, brushed metal edges, and visible floor texture. Secondary landmarks include a set of control panels on the left and equipment cases on the right side. The camera moves forward while tilting up to reveal the vertical scale, revealing the upper structure, sky, ceiling, or distant vertical scale.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "wi"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wi"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "height_offset": 0.88,
+    "pitch_deg": -9.5
+  },
+  {
+    "task_id": "flex_height_offset_prompt_02591",
+    "scene_name": "scene_railway_bridge",
+    "image_path": "./flex_demo_custom/scene_railway_bridge.jpg",
+    "caption": "Style: Night Photography. A scene of railway bridge above a river, featuring waiting areas, luggage carts, and structured overhead beams. The composition uses a sweeping panoramic view with a low horizon. Lighting is defined by soft overcast daylight with muted shadows, with clear air with crisp edges and distant visibility. Surface and prop detail include rail tracks, gravel, signal lights, and worn platform edges. Secondary landmarks include signal lights and rail posts to the left and a lit sign or display panel on the right. The camera moves backward to widen the view, widening the view and clarifying the spatial layout. The camera then moves backward while panning left, revealing signal lights and rail posts to the left. The camera then moves backward while panning right, revealing a lit sign or display panel on the right.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "w",
+      "wj"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wj"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "height_offset": 0.99,
+    "pitch_deg": -10.7
+  },
+  {
+    "task_id": "flex_height_offset_prompt_04304",
+    "scene_name": "scene_castle_gallery",
+    "image_path": "./flex_demo_custom/scene_castle_gallery.jpg",
+    "caption": "Style: Detailed Matte Painting. A scene of castle gallery corridor with banners, featuring arched openings, courtyards, columns, and weathered masonry. The composition uses a doorway-framed interior view with deep room perspective. Lighting is defined by desert sunset light with orange dust in the air, with thin fog drifting through the background. Surface and prop detail include wet stone, rough plaster, old wood grain, and small metal fixtures. Secondary landmarks include arched windows on the left and a broken arch on the right side. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while tilting down toward near-ground detail, revealing foreground texture, lower terrain, floor markings, or near-object detail.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "wj"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wj"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "height_offset": 0.81,
+    "pitch_deg": -6.9
+  },
+  {
+    "task_id": "flex_converging_prompt_03608",
+    "scene_name": "scene_mountain_railway",
+    "image_path": "./flex_demo_custom/scene_mountain_railway.jpg",
+    "caption": "Style: Cinematic Photorealistic. A scene of mountain railway stop beside a cliff, featuring prayer flags, stone steps, and distant snow fields. The composition uses a high vantage point looking down into the space. Lighting is defined by misty dawn light diffused through haze, with quiet stillness with no visible weather. Surface and prop detail include wet stone, rough plaster, old wood grain, and small metal fixtures. Secondary landmarks include a cluster of plants near the left edge and a dense group of trees on the right. The camera moves backward to widen the view, widening the view and clarifying the spatial layout. The camera then moves backward while panning left, revealing a cluster of plants near the left edge. The camera then moves backward while panning right, revealing a dense group of trees on the right.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "start_baseline": 1.74,
+    "end_baseline": 0.91,
+    "start_vergence_deg": 14.9,
+    "end_vergence_deg": 33.0
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_08935",
+    "scene_name": "scene_archaeological_excavation",
+    "image_path": "./flex_demo_custom/scene_archaeological_excavation.jpg",
+    "caption": "Style: Detailed Matte Painting. A scene of archaeological excavation trench, featuring a central passage or staircase leading deeper into the site. The composition uses a long platform view with repeating columns and lights. Lighting is defined by desert sunset light with orange dust in the air, with dust motes visible in angled light. Surface and prop detail include linen fabric, ceramic objects, warm wood, and soft dust. Secondary landmarks include arched windows on the left and a secondary building on the right. The camera moves backward to widen the view, widening the view and clarifying the spatial layout. The camera then moves backward while panning left, revealing arched windows on the left. The camera then moves backward while panning right, revealing a secondary building on the right.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "s",
+      "sl"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "s",
+      "sl"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "baseline": 0.64,
+    "vergence_deg": 17.5
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_02677",
+    "scene_name": "style_rendering_cgi",
+    "image_path": "./flex_demo_custom/style_rendering_cgi.jpg",
+    "caption": "Style: 3D Rendering / CGI. A scene of sunken shipwreck interior, featuring broken beams, silt, crates, and shafts of light. The composition uses an off-center composition with the main subject weighted to the right. Lighting is defined by underwater caustic light filtering from above, with small glowing particles that remain physically plausible. Surface and prop detail include coral growth, suspended bubbles, worn stone, and blue-green water haze. Secondary landmarks include a water channel along the left side and equipment cases on the right side. The camera moves forward through the water, revealing depth, foreground texture, and the main subject. The camera then moves forward while tilting up through the light shafts, revealing the upper structure, sky, ceiling, or distant vertical scale. The camera then moves forward while panning right across side details, revealing equipment cases on the right side.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "s"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "s"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "depth_offset": 1.63,
+    "vergence_deg": 17.1
+  },
+  {
+    "task_id": "flex_height_offset_prompt_01796",
+    "scene_name": "scene_alpine_campsite",
+    "image_path": "./flex_demo_custom/scene_alpine_campsite.jpg",
+    "caption": "Style: Golden Hour Photography. A scene of alpine campsite below jagged peaks, featuring layered ridgelines, low clouds, and cold blue shadows. The composition uses an elevated map-like view while preserving realistic detail. Lighting is defined by warm golden-hour sunlight with long shadows, with clear air with crisp edges and distant visibility. Surface and prop detail include wet stone, rough plaster, old wood grain, and small metal fixtures. Secondary landmarks include a low wall or railing on the left and a railing and drop-off on the right. The camera moves backward to widen the view, widening the view and clarifying the spatial layout. The camera then moves backward while panning left, revealing a low wall or railing on the left. The camera then moves backward while panning right, revealing a railing and drop-off on the right.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "w",
+      "wk"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wk"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "height_offset": 1.14,
+    "pitch_deg": -8.8
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_06572",
+    "scene_name": "scene_fishing_village",
+    "image_path": "./flex_demo_custom/scene_fishing_village.jpg",
+    "caption": "Style: Urban Photography. A scene of fishing village above a turquoise bay, featuring storm clouds opening to a thin band of sunlight. The composition uses a dense market-like composition with many small readable objects. Lighting is defined by warm golden-hour sunlight with long shadows, with clear air with crisp edges and distant visibility. Surface and prop detail include field grass, distant fences, gravel paths, and low sun glare. Secondary landmarks include a cluster of plants near the left edge and a rocky outcrop on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a rocky outcrop on the right. The camera then moves forward while panning left, revealing a cluster of plants near the left edge.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "wl"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wl"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "depth_offset": 1.46,
+    "vergence_deg": 17.0
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_09891",
+    "scene_name": "scene_open_mechanical",
+    "image_path": "./flex_demo_custom/scene_open_mechanical.jpg",
+    "caption": "Style: Realistic Digital Illustration. A scene of open mechanical pocket watch on black velvet, featuring table edges, side objects, and a soft room behind the subject. The composition uses a cave-mouth composition with bright exterior light beyond. Lighting is defined by low-light interior illumination from lamps and windows, with quiet stillness with no visible weather. Surface and prop detail include clay, pottery tools, damp surfaces, and tall window light. Secondary landmarks include a side table or workbench on the left and a bright practical light on the right. The camera moves forward toward the close subject, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning left across surrounding props, revealing a side table or workbench on the left.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "baseline": 2.24,
+    "vergence_deg": 17.9
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_04010",
+    "scene_name": "scene_kelp_forest",
+    "image_path": "./flex_demo_custom/scene_kelp_forest.jpg",
+    "caption": "Style: Documentary Photography. A scene of kelp forest path with fish schools, featuring green water haze, cables, pressure windows, and small lights. The composition uses a symmetrical central-axis composition with varied side details. Lighting is defined by underwater caustic light filtering from above, with small glowing particles that remain physically plausible. Surface and prop detail include coral growth, suspended bubbles, worn stone, and blue-green water haze. Secondary landmarks include a low wall or railing on the left and a reflective glass wall on the right. The camera moves forward through the water, revealing depth, foreground texture, and the main subject. The camera then moves forward while tilting up through the light shafts, revealing the upper structure, sky, ceiling, or distant vertical scale. The camera then moves forward while panning right across side details, revealing a reflective glass wall on the right.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "s"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "s"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "depth_offset": 1.76,
+    "vergence_deg": 16.8
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_04552",
+    "scene_name": "scene_oasis_garden",
+    "image_path": "./flex_demo_custom/scene_oasis_garden.jpg",
+    "caption": "Style: Aerial Photography. A scene of oasis garden enclosed by mud-brick walls, featuring orange dust, sparse shrubs, carved stone, and long shadows. The composition uses a long one-point perspective with strong foreground lines. Lighting is defined by subtle rim light on wet or metallic surfaces, with subtle heat shimmer above stone, asphalt, or lava. Surface and prop detail include field grass, distant fences, gravel paths, and low sun glare. Secondary landmarks include a secondary path branching left and a secondary building on the right. The camera moves right while panning left across the broad layout, revealing a secondary path branching left. The camera then moves forward while tilting down to reveal lower terrain details, revealing foreground texture, lower terrain, floor markings, or near-object detail.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "w",
+      "wl"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wl"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "baseline": 0.95,
+    "vergence_deg": 12.4
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_09863",
+    "scene_name": "scene_submerged_temple_2",
+    "image_path": "./flex_demo_custom/scene_submerged_temple_2.jpg",
+    "caption": "Style: Documentary Photography. A scene of submerged temple gate, featuring curved glass, silhouettes of fish, and tiled walkway. The composition uses a quiet negative-space composition around a single realistic subject. Lighting is defined by underwater caustic light filtering from above, with quiet stillness with no visible weather. Surface and prop detail include glass reflections, brushed metal edges, and visible floor texture. Secondary landmarks include a glass partition catching light on the left and a reflective glass wall on the right. The camera moves forward while tilting up to reveal the vertical scale, revealing the upper structure, sky, ceiling, or distant vertical scale.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "wj"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wj"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "baseline": 1.91,
+    "vergence_deg": 12.2
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_00916",
+    "scene_name": "scene_mosscovered_stone",
+    "image_path": "./flex_demo_custom/scene_mosscovered_stone.jpg",
+    "caption": "Style: Documentary Photography. A scene of moss-covered stone well close to the camera, featuring fine texture, dust, scratches, and careful practical lighting. The composition uses a close foreground object leading into a detailed background. Lighting is defined by museum skylight with soft beams on the floor, with dust motes visible in angled light. Surface and prop detail include paper, ink, shelves, book spines, and reading lamps. Secondary landmarks include a side table or workbench on the left and a reflective glass wall on the right. The camera moves forward slightly, revealing depth, foreground texture, and the main subject. The camera then pans left, revealing a side table or workbench on the left. The camera then pans right, revealing a reflective glass wall on the right.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "wi"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wi"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "depth_offset": 1.98,
+    "vergence_deg": 17.5
+  },
+  {
+    "task_id": "flex_height_offset_prompt_08669",
+    "scene_name": "scene_underground_pumping",
+    "image_path": "./flex_demo_custom/scene_underground_pumping.jpg",
+    "caption": "Style: Urban Photography. A scene of underground pumping station, featuring steam, dust, and bright task lights in the distance. The composition uses a side-lit corridor with partial foreground occlusion. Lighting is defined by volcanic glow lighting from below, with rippling reflections on water or polished floor. Surface and prop detail include carbon fiber, white panels, instrument screens, and sealed hatches. Secondary landmarks include a line of lamps on the left side and a parked vehicle or cart on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a parked vehicle or cart on the right. The camera then moves forward while panning left, revealing a line of lamps on the left side.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "sj"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "sj"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "height_offset": 1.26,
+    "pitch_deg": -9.5
+  },
+  {
+    "task_id": "flex_converging_prompt_03770",
+    "scene_name": "scene_sushi_plate",
+    "image_path": "./flex_demo_custom/scene_sushi_plate.jpg",
+    "caption": "Style: Natural Light Photography. A scene of sushi plate on a lacquer counter, featuring table edges, side objects, and a soft room behind the subject. The composition uses a compact tabletop composition with surrounding props. Lighting is defined by warm tungsten light mixed with cool window light, with quiet stillness with no visible weather. Surface and prop detail include linen fabric, ceramic objects, warm wood, and soft dust. Secondary landmarks include a side table or workbench on the left and a bright practical light on the right. The camera moves forward slightly, revealing depth, foreground texture, and the main subject. The camera then pans left, revealing a side table or workbench on the left. The camera then pans right, revealing a bright practical light on the right.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "w",
+      "wj"
+    ],
+    "action_speed_left": [
+      3,
+      3
+    ],
+    "action_seq_right": [
+      "w",
+      "wj"
+    ],
+    "action_speed_right": [
+      3,
+      3
+    ],
+    "start_baseline": 2.44,
+    "end_baseline": 0.43,
+    "start_vergence_deg": 11.8,
+    "end_vergence_deg": 41.1
+  },
+  {
+    "task_id": "flex_horizontal_offset_prompt_05574",
+    "scene_name": "scene_chemistry_classroom",
+    "image_path": "./flex_demo_custom/scene_chemistry_classroom.jpg",
+    "caption": "Style: Photorealistic. A scene of chemistry classroom with glassware, featuring rows of shelves, doors, benches, or equipment on both sides. The composition uses a compact room composition with readable left and right details. Lighting is defined by cool fluorescent interior light, with fine ash or powder settled on nearby objects. Surface and prop detail include paper, ink, shelves, book spines, and reading lamps. Secondary landmarks include a side table or workbench on the left and a side corridor opening on the right. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a side corridor opening on the right.",
+    "right_mode": "horizontal_offset",
+    "action_seq_left": [
+      "sl"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "sl"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "baseline": 1.26,
+    "vergence_deg": 20.5
+  },
+  {
+    "task_id": "flex_converging_prompt_03470",
+    "scene_name": "scene_weathered_observatory",
+    "image_path": "./flex_demo_custom/scene_weathered_observatory.jpg",
+    "caption": "Style: Photorealistic. A scene of weathered observatory on a dry plateau, featuring sand ripples, broken walls, and a low sun. The composition uses a path, road, rail, or bridge leading toward a distant landmark. Lighting is defined by warm golden-hour sunlight with long shadows, with dark rain clouds with a bright horizon line. Surface and prop detail include stone arches, banners, carved reliefs, and torch brackets. Secondary landmarks include a hanging sign or banner on the left and a broken arch on the right side. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while tilting down toward near-ground detail, revealing foreground texture, lower terrain, floor markings, or near-object detail.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "wj"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wj"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "start_baseline": 1.64,
+    "end_baseline": 0.91,
+    "start_vergence_deg": 9.7,
+    "end_vergence_deg": 44.9
+  },
+  {
+    "task_id": "flex_converging_prompt_01832",
+    "scene_name": "scene_neonlit_subway",
+    "image_path": "./flex_demo_custom/scene_neonlit_subway.jpg",
+    "caption": "Style: Interior Photography. A scene of neon-lit subway entrance, featuring wet pavement, reflections, signs, and windows on both sides. The composition uses a dense market-like composition with many small readable objects. Lighting is defined by neon rain lighting with saturated reflections, with dark rain clouds with a bright horizon line. Surface and prop detail include rain puddles, neon reflections, glass panels, and dark asphalt. Secondary landmarks include a glass partition catching light on the left and a parked vehicle or cart on the right. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a parked vehicle or cart on the right.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "wj"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wj"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "start_baseline": 2.91,
+    "end_baseline": 0.74,
+    "start_vergence_deg": 13.9,
+    "end_vergence_deg": 35.2
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_04803",
+    "scene_name": "scene_ancient_underwater",
+    "image_path": "./flex_demo_custom/scene_ancient_underwater.jpg",
+    "caption": "Style: Cinematic Photorealistic. A scene of ancient underwater ruins along a causeway, featuring blue light shafts, bubbles, coral, and worn stone. The composition uses a diagonal composition with the subject crossing the frame. Lighting is defined by subtle rim light on wet or metallic surfaces, with small glowing particles that remain physically plausible. Surface and prop detail include glass reflections, brushed metal edges, and visible floor texture. Secondary landmarks include a broken column on the left side and a waterfall or water feature on the right. The camera moves forward slightly, revealing depth, foreground texture, and the main subject. The camera then pans left, revealing a broken column on the left side. The camera then pans right, revealing a waterfall or water feature on the right.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "depth_offset": 0.79,
+    "vergence_deg": 12.5
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_06216",
+    "scene_name": "scene_windcarved_arch",
+    "image_path": "./flex_demo_custom/scene_windcarved_arch.jpg",
+    "caption": "Style: Realistic Game Environment. A scene of wind-carved arch facing a distant mesa, featuring heat shimmer, tire tracks, dry grass, and a bright sky. The composition uses a symmetrical central-axis composition with varied side details. Lighting is defined by warm golden-hour sunlight with long shadows, with clear air with crisp edges and distant visibility. Surface and prop detail include stone arches, banners, carved reliefs, and torch brackets. Secondary landmarks include a secondary path branching left and a rocky outcrop on the right. The camera moves forward along the main path, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a rocky outcrop on the right. The camera then moves forward while panning left, revealing a secondary path branching left.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "wk"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wk"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "depth_offset": 1.65,
+    "vergence_deg": 10.7
+  },
+  {
+    "task_id": "flex_height_offset_prompt_00053",
+    "scene_name": "scene_sunlit_bedroom",
+    "image_path": "./flex_demo_custom/scene_sunlit_bedroom.jpg",
+    "caption": "Style: Cinematic Photorealistic. A scene of sunlit bedroom viewed from a dark doorway, featuring two visible walls, a readable floor plane, and foreground objects. The composition uses a long one-point perspective with strong foreground lines. Lighting is defined by warm tungsten light mixed with cool window light, with humid haze around plants and glass. Surface and prop detail include marble, framed art, soft upholstery, and museum-grade lighting. Secondary landmarks include a sculptural object on the left and a table with small props on the right. The camera moves backward to widen the view, widening the view and clarifying the spatial layout. The camera then moves backward while panning left, revealing a sculptural object on the left. The camera then moves backward while panning right, revealing a table with small props on the right.",
+    "right_mode": "height_offset",
+    "action_seq_left": [
+      "wi"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "wi"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "height_offset": 0.78,
+    "pitch_deg": -14.5
+  },
+  {
+    "task_id": "flex_depth_offset_prompt_02340",
+    "scene_name": "scene_glacier_overlook",
+    "image_path": "./flex_demo_custom/scene_glacier_overlook.jpg",
+    "caption": "Style: Night Photography. A scene of glacier overlook with safety ropes, featuring layered ridgelines, low clouds, and cold blue shadows. The composition uses a compact room composition with readable left and right details. Lighting is defined by twilight backlight separating the main silhouette, with thin fog drifting through the background. Surface and prop detail include linen fabric, ceramic objects, warm wood, and soft dust. Secondary landmarks include a line of lamps on the left side and a rocky outcrop on the right. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while tilting down toward near-ground detail, revealing foreground texture, lower terrain, floor markings, or near-object detail.",
+    "right_mode": "depth_offset",
+    "action_seq_left": [
+      "sl"
+    ],
+    "action_speed_left": [
+      3
+    ],
+    "action_seq_right": [
+      "sl"
+    ],
+    "action_speed_right": [
+      3
+    ],
+    "depth_offset": 1.61,
+    "vergence_deg": 7.5
+  },
+  {
+    "task_id": "flex_converging_prompt_02705",
+    "scene_name": "scene_ancient_ruins_2",
+    "image_path": "./flex_demo_custom/scene_ancient_ruins_2.jpg",
+    "caption": "Style: Cinematic Photorealistic. A scene of ancient ruins layout in a dry valley, featuring tiny vehicles, roofs, fields, and landmarks on both sides. The composition uses a ground-level view emphasizing texture and scale. Lighting is defined by clear alpine light with sharp distant visibility, with falling snow and cold air haze. Surface and prop detail include rail tracks, gravel, signal lights, and worn platform edges. Secondary landmarks include a partially visible vehicle on the left and a railing and drop-off on the right. The camera moves forward into the scene, revealing depth, foreground texture, and the main subject. The camera then moves forward while panning right, revealing a railing and drop-off on the right.",
+    "right_mode": "converging",
+    "action_seq_left": [
+      "w"
+    ],
+    "action_speed_left": [
+      4
+    ],
+    "action_seq_right": [
+      "w"
+    ],
+    "action_speed_right": [
+      4
+    ],
+    "start_baseline": 2.94,
+    "end_baseline": 0.56,
+    "start_vergence_deg": 16.6,
+    "end_vergence_deg": 28.5
+  }
+]

@@ -1,0 +1,30 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local environments and caches
+.venv/
+venv/
+.cache/
+
+# Internal scripts (not for release)
+*_inner.sh
+run_noray.sh
+
+# Runtime outputs
+output*/
+shell_logs/
+
+# Local model checkpoints / weights
+weights/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+
+# Demo images are committed as JPEG to keep the repo small.
+# Large PNG/BMP/TIFF sources should stay local.
+*.png
+*.bmp
+*.tif
+*.tiff
