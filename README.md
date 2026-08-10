@@ -21,7 +21,10 @@
 - WASD-style camera controls for translation, yaw, and pitch.
 - **Flexible stereo**: independent left/right camera control with multiple right-camera modes (converging, horizontal offset, depth offset, height offset).
 - **Fixed-baseline stereo**: side-by-side stereo output with configurable stereo baseline.
+- **Autoregressive long video**: 4-step autoregressive student model for generating extended sequences beyond the single-clip frame budget.
 - Single-GPU inference and optional multi-GPU sequence-parallel inference.
+
+![teaser](./imgs/teaser.jpg)
 
 ## Installation
 
@@ -131,7 +134,8 @@ bash run_flex.sh \
 
 By default, the scripts use `ExpData/flex_demo_custom_eval.json`, which contains 77 prompt/action examples across four right-camera modes. The corresponding input images are included under `ExpData/flex_demo_custom/`.
 
-## Custom Inference
+<details>
+<summary><b>Custom Inference</b> — batch/single-folder inference options (click to expand)</summary>
 
 ### Fixed-Baseline Stereo
 
@@ -215,6 +219,8 @@ Supported `right_mode` values:
 | `height_offset` | Right camera offset vertically from left |
 
 Left and right cameras have independent action sequences and speed lists, enabling asymmetric camera trajectories.
+
+</details>
 
 ## Camera Actions
 
