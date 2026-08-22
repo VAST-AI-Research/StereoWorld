@@ -1,0 +1,22 @@
+# StereoWorld inference dependencies
+# Tested with CUDA 12.6, Python 3.12
+
+# Core
+torch>=2.4.0
+diffusers==0.35.1
+transformers==4.48.3
+accelerate>=1.12.0
+safetensors>=0.4.5
+einops>=0.8.0
+scipy>=1.14.0
+numpy>=1.26.0
+Pillow>=11.0.0
+av>=14.0.0
+
+# Optional: faster attention (recommended)
+# flash-attn>=2.7.0
+
+# Optional: multi-GPU sequence parallel inference
+# xfuser==0.4.1
+# yunchang
+# distvae

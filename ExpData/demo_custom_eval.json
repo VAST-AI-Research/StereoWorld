@@ -1,0 +1,469 @@
+[
+    {
+        "task_id": "custom_varied_000",
+        "image_path": "./demo_custom/storm_lighthouse.jpg",
+        "caption": "Style: Photorealistic. A scene of a storm-battered lighthouse on black coastal rocks, featuring white surf, slate clouds, spray, and a narrow path along the cliff. The camera moves forward, revealing the foreground terrain and distant horizon. The camera then moves forward while panning right, revealing side landmarks and depth layers. The camera then moves forward while panning left, revealing the opposite side of the environment.",
+        "action_seq": [
+            "w",
+            "wl",
+            "wj"
+        ],
+        "action_speed_list": [
+            4,
+            6,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_001",
+        "image_path": "./demo_custom/voxel_cliff_village.jpg",
+        "caption": "Style: Minecraft. A scene of a blocky cliff village above a square blue ocean, featuring grass cubes, red soil, torch-lit windows, and pixel clouds at sunset. The camera moves forward, revealing the blocky terrain ahead. The camera then moves forward while panning left, revealing the cliff edge and ocean.",
+        "action_seq": [
+            "w",
+            "wj"
+        ],
+        "action_speed_list": [
+            4,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_002",
+        "image_path": "./demo_custom/mist_pagoda.jpg",
+        "caption": "Style: Photorealistic. A scene of a pagoda on a green hillside, featuring misty mountains, terraced paths, pine trees, and warm golden-hour light. The camera moves forward, revealing the foreground terrain and distant horizon. The camera then moves forward while panning right, revealing side landmarks and depth layers. The camera then moves forward while panning left, revealing the opposite side of the environment.",
+        "action_seq": [
+            "w",
+            "wl",
+            "wj"
+        ],
+        "action_speed_list": [
+            4,
+            6,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_003",
+        "image_path": "./demo_custom/sunlit_bedroom.jpg",
+        "caption": "Style: Photorealistic. A scene of a quiet bedroom viewed from a dark doorway, featuring arched window light, pale curtains, linen bedding, and a wood floor. The camera moves forward, revealing the main furniture and window light. The camera then panning left, revealing details on the left side of the room. The camera then panning right, revealing objects and surfaces on the right side.",
+        "action_seq": [
+            "w",
+            "j",
+            "l"
+        ],
+        "action_speed_list": [
+            4,
+            5,
+            5
+        ]
+    },
+    {
+        "task_id": "custom_varied_004",
+        "image_path": "./demo_custom/lakeside_balcony.jpg",
+        "caption": "Style: Photorealistic. A scene of a wooden balcony overlooking a lake, featuring glass doors, lounge chairs, railing shadows, twilight water, and distant mountains. The camera moves forward, revealing the main furniture and window light. The camera then panning left, revealing details on the left side of the room. The camera then panning right, revealing objects and surfaces on the right side.",
+        "action_seq": [
+            "w",
+            "j",
+            "l"
+        ],
+        "action_speed_list": [
+            4,
+            5,
+            5
+        ]
+    },
+    {
+        "task_id": "custom_varied_005",
+        "image_path": "./demo_custom/mossy_well.jpg",
+        "caption": "Style: Photorealistic. A scene of a moss-covered stone well in a garden, featuring wet stones, autumn leaves, dark water, and soft green background blur. The camera moves forward, revealing the main object texture. The camera then moves right while panning left, revealing the rim, table surface, and surrounding props.",
+        "action_seq": [
+            "w",
+            "dj"
+        ],
+        "action_speed_list": [
+            4,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_006",
+        "image_path": "./demo_custom/volcano_crater.jpg",
+        "caption": "Style: Photorealistic. A scene of an active volcanic crater seen from above, featuring black basalt, red-orange lava cracks, steam, and a violet horizon. The camera moves right while panning left, revealing the broad map-like layout. The camera then moves forward while tilting down, revealing lower terrain details and spatial structure.",
+        "action_seq": [
+            "dj",
+            "wk"
+        ],
+        "action_speed_list": [
+            6,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_009",
+        "image_path": "./demo_custom/alien_moon_desert.jpg",
+        "caption": "Style: 3D Rendering / CGI. A scene of a violet alien desert under two moons, featuring crystal spires, rippled dunes, glowing terrain, and a distant monolith. The camera moves forward, revealing the foreground terrain and distant horizon. The camera then moves forward while panning right, revealing side landmarks and depth layers. The camera then moves forward while panning left, revealing the opposite side of the environment.",
+        "action_seq": [
+            "w",
+            "wl",
+            "wj"
+        ],
+        "action_speed_list": [
+            4,
+            6,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_011",
+        "image_path": "./demo_custom/underground_river_arch.jpg",
+        "caption": "Style: 3D Rendering / CGI. A scene of a dark underground river below a stone arch, featuring fog, mossy walls, wet reflections, vines, and a waterfall glow. The camera moves forward, revealing the vanishing point and floor perspective. The camera then moves forward while panning right, revealing side architecture and lights.",
+        "action_seq": [
+            "w",
+            "wl"
+        ],
+        "action_speed_list": [
+            4,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_012",
+        "image_path": "./demo_custom/floating_islands.jpg",
+        "caption": "Style: 3D Rendering / CGI. A scene of floating islands above a sea of clouds, featuring waterfalls, bridges, green cliffs, ancient arches, and sunrise haze. The camera moves right while panning left, revealing the broad map-like layout. The camera then moves forward while tilting down, revealing lower terrain details and spatial structure.",
+        "action_seq": [
+            "dj",
+            "wk"
+        ],
+        "action_speed_list": [
+            6,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_013",
+        "image_path": "./demo_custom/twilight_mountain_camp.jpg",
+        "caption": "Style: Photorealistic. A scene of a mountain campsite at twilight, featuring a small campfire, green tent, grass, rocks, and jagged peaks. The camera moves forward, revealing the foreground terrain and distant horizon. The camera then moves forward while panning right, revealing side landmarks and depth layers. The camera then moves forward while panning left, revealing the opposite side of the environment.",
+        "action_seq": [
+            "w",
+            "wl",
+            "wj"
+        ],
+        "action_speed_list": [
+            4,
+            6,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_016",
+        "image_path": "./demo_custom/desert_moon_temple.jpg",
+        "caption": "Style: Concept Art. A scene of a sandstone moon temple half buried in dunes, featuring carved pillars, twin moons, warm haze, and glowing relics. The camera moves forward, revealing the foreground terrain and distant horizon. The camera then moves forward while panning right, revealing side landmarks and depth layers. The camera then moves forward while panning left, revealing the opposite side of the environment.",
+        "action_seq": [
+            "w",
+            "wl",
+            "wj"
+        ],
+        "action_speed_list": [
+            4,
+            6,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_018",
+        "image_path": "./demo_custom/morning_kitchen.jpg",
+        "caption": "Style: Photorealistic. A scene of a warm kitchen counter, featuring fruit bowls, a sink, tile backsplash, wood grain, and soft morning light. The camera moves forward, revealing the main furniture and window light. The camera then panning left, revealing details on the left side of the room. The camera then panning right, revealing objects and surfaces on the right side.",
+        "action_seq": [
+            "w",
+            "j",
+            "l"
+        ],
+        "action_speed_list": [
+            4,
+            5,
+            5
+        ]
+    },
+    {
+        "task_id": "custom_varied_021",
+        "image_path": "./demo_custom/snowy_mountain_road.jpg",
+        "caption": "Style: Photorealistic. A scene of a snowy mountain road, featuring falling snow, dark asphalt, pine trees, distant peaks, and a yellow center line. The camera moves forward, revealing the road ahead. The camera then moves forward while tilting down, revealing lane markings and near-ground details.",
+        "action_seq": [
+            "w",
+            "wk"
+        ],
+        "action_speed_list": [
+            4,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_022",
+        "image_path": "./demo_custom/minimal_gallery.jpg",
+        "caption": "Style: Minimalist Gallery Render. A scene of a modern art gallery, featuring white walls, polished floors, framed paintings, pedestals, and skylight beams. The camera moves forward, revealing the main furniture and window light. The camera then panning left, revealing details on the left side of the room. The camera then panning right, revealing objects and surfaces on the right side.",
+        "action_seq": [
+            "w",
+            "j",
+            "l"
+        ],
+        "action_speed_list": [
+            4,
+            5,
+            5
+        ]
+    },
+    {
+        "task_id": "custom_varied_025",
+        "image_path": "./demo_custom/old_library_aisle.jpg",
+        "caption": "Style: Photorealistic. A scene of a tall old library aisle, featuring wooden shelves, ladders, dust beams, green reading lamps, and stacked books. The camera moves forward, revealing the main furniture and window light. The camera then panning left, revealing details on the left side of the room. The camera then panning right, revealing objects and surfaces on the right side.",
+        "action_seq": [
+            "w",
+            "j",
+            "l"
+        ],
+        "action_speed_list": [
+            4,
+            5,
+            5
+        ]
+    },
+    {
+        "task_id": "custom_varied_028",
+        "image_path": "./demo_custom/rice_terraces.jpg",
+        "caption": "Style: Photorealistic. A scene of curving mountain rice terraces, featuring mirrored water steps, small huts, green ridges, and morning fog. The camera moves right while panning left, revealing the broad map-like layout. The camera then moves forward while tilting down, revealing lower terrain details and spatial structure.",
+        "action_seq": [
+            "dj",
+            "wk"
+        ],
+        "action_speed_list": [
+            6,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_030",
+        "image_path": "./demo_custom/ancient_compass_table.jpg",
+        "caption": "Style: Photorealistic. A scene of an antique brass compass on a wooden map table, featuring rolled charts, candles, ink bottles, and shallow depth of field. The camera moves forward, revealing the main object texture. The camera then moves right while panning left, revealing the rim, table surface, and surrounding props.",
+        "action_seq": [
+            "w",
+            "dj"
+        ],
+        "action_speed_list": [
+            4,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_034",
+        "image_path": "./demo_custom/tea_house_window.jpg",
+        "caption": "Style: Photorealistic. A scene of a quiet tea house beside a paper window, featuring tatami mats, low table, ceramic cups, bamboo shadows, and warm light. The camera moves forward, revealing the main furniture and window light. The camera then panning left, revealing details on the left side of the room. The camera then panning right, revealing objects and surfaces on the right side.",
+        "action_seq": [
+            "w",
+            "j",
+            "l"
+        ],
+        "action_speed_list": [
+            4,
+            5,
+            5
+        ]
+    },
+    {
+        "task_id": "custom_varied_035",
+        "image_path": "./demo_custom/clockwork_factory.jpg",
+        "caption": "Style: 3D Rendering / CGI. A scene of a clockwork factory floor, featuring large gears, belts, brass pipes, orange furnace light, and catwalks. The camera moves forward, revealing machinery depth and catwalks. The camera then moves forward while panning right, revealing belts, gears, and side equipment.",
+        "action_seq": [
+            "w",
+            "wl"
+        ],
+        "action_speed_list": [
+            4,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_036",
+        "image_path": "./demo_custom/harbor_map_view.jpg",
+        "caption": "Style: Isometric Illustration. A scene of a stylized harbor seen from above, featuring piers, small boats, containers, cranes, breakwaters, and teal water. The camera moves right while panning left, revealing the broad map-like layout. The camera then moves forward while tilting down, revealing lower terrain details and spatial structure.",
+        "action_seq": [
+            "dj",
+            "wk"
+        ],
+        "action_speed_list": [
+            6,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_037",
+        "image_path": "./demo_custom/northern_lights_cabin.jpg",
+        "caption": "Style: Photorealistic. A scene of a snow cabin beneath northern lights, featuring pine silhouettes, smoke, warm windows, frozen lake, and starry sky. The camera moves forward, revealing the foreground terrain and distant horizon. The camera then moves forward while panning right, revealing side landmarks and depth layers. The camera then moves forward while panning left, revealing the opposite side of the environment.",
+        "action_seq": [
+            "w",
+            "wl",
+            "wj"
+        ],
+        "action_speed_list": [
+            4,
+            6,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_044",
+        "image_path": "./demo_custom/music_studio.jpg",
+        "caption": "Style: Photorealistic. A scene of a compact music studio, featuring mixing desk, speakers, guitars, acoustic panels, and warm lamp light. The camera moves forward, revealing the main furniture and window light. The camera then panning left, revealing details on the left side of the room. The camera then panning right, revealing objects and surfaces on the right side.",
+        "action_seq": [
+            "w",
+            "j",
+            "l"
+        ],
+        "action_speed_list": [
+            4,
+            5,
+            5
+        ]
+    },
+    {
+        "task_id": "custom_varied_047",
+        "image_path": "./demo_custom/museum_storage_hall.jpg",
+        "caption": "Style: Photorealistic. A scene of a museum storage hall, featuring covered statues, crates, rolling shelves, overhead lights, and polished concrete. The camera moves forward, revealing the vanishing point and floor perspective. The camera then moves forward while panning right, revealing side architecture and lights.",
+        "action_seq": [
+            "w",
+            "wl"
+        ],
+        "action_speed_list": [
+            4,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_051",
+        "image_path": "./demo_custom/attic_workshop.jpg",
+        "caption": "Style: Photorealistic. A scene of an attic workshop, featuring slanted beams, workbench, jars, paper sketches, skylight dust, and old tools. The camera moves forward, revealing the main furniture and window light. The camera then panning left, revealing details on the left side of the room. The camera then panning right, revealing objects and surfaces on the right side.",
+        "action_seq": [
+            "w",
+            "j",
+            "l"
+        ],
+        "action_speed_list": [
+            4,
+            5,
+            5
+        ]
+    },
+    {
+        "task_id": "custom_varied_059",
+        "image_path": "./demo_custom/hospital_operating_room.jpg",
+        "caption": "Style: Photorealistic. A scene of an empty operating room, featuring surgical lamps, stainless tables, monitors, blue sterile walls, and clean reflections. The camera moves forward, revealing the main furniture and window light. The camera then panning left, revealing details on the left side of the room. The camera then panning right, revealing objects and surfaces on the right side.",
+        "action_seq": [
+            "w",
+            "j",
+            "l"
+        ],
+        "action_speed_list": [
+            4,
+            5,
+            5
+        ]
+    },
+    {
+        "task_id": "custom_varied_066",
+        "image_path": "./demo_custom/hotel_hallway.jpg",
+        "caption": "Style: Photorealistic. A scene of a quiet hotel hallway, featuring patterned carpet, wall sconces, doors, mirrors, and warm ceiling lights. The camera moves forward, revealing the vanishing point and floor perspective. The camera then moves forward while panning right, revealing side architecture and lights.",
+        "action_seq": [
+            "w",
+            "wl"
+        ],
+        "action_speed_list": [
+            4,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_067",
+        "image_path": "./demo_custom/old_europe_square.jpg",
+        "caption": "Style: Photorealistic. A scene of an old European town square, featuring cafe tables, cobblestones, clock tower, umbrellas, and morning light. The camera moves forward, revealing the street depth and foreground structures. The camera then moves forward while panning right, revealing right-side signage and skyline. The camera then moves forward while panning left, revealing left-side buildings and reflections.",
+        "action_seq": [
+            "w",
+            "wl",
+            "wj"
+        ],
+        "action_speed_list": [
+            4,
+            6,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_071",
+        "image_path": "./demo_custom/glacier_lagoon.jpg",
+        "caption": "Style: Photorealistic. A scene of a glacier lagoon, featuring blue icebergs, black beach, low clouds, cold water, and distant glacier walls. The camera moves forward, revealing the foreground terrain and distant horizon. The camera then moves forward while panning right, revealing side landmarks and depth layers. The camera then moves forward while panning left, revealing the opposite side of the environment.",
+        "action_seq": [
+            "w",
+            "wl",
+            "wj"
+        ],
+        "action_speed_list": [
+            4,
+            6,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_073",
+        "image_path": "./demo_custom/children_playroom.jpg",
+        "caption": "Style: Illustration. A scene of a colorful children's playroom, featuring soft mats, blocks, shelves, round window, and scattered toys. The camera moves forward, revealing the main furniture and window light. The camera then panning left, revealing details on the left side of the room. The camera then panning right, revealing objects and surfaces on the right side.",
+        "action_seq": [
+            "w",
+            "j",
+            "l"
+        ],
+        "action_speed_list": [
+            4,
+            5,
+            5
+        ]
+    },
+    {
+        "task_id": "custom_varied_074",
+        "image_path": "./demo_custom/coastal_tunnel_road.jpg",
+        "caption": "Style: Photorealistic. A scene of a road emerging from a coastal tunnel, featuring ocean view, concrete walls, headlights, guardrail, and sunset. The camera moves forward, revealing the road ahead. The camera then moves forward while tilting down, revealing lane markings and near-ground details.",
+        "action_seq": [
+            "w",
+            "wk"
+        ],
+        "action_speed_list": [
+            4,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_078",
+        "image_path": "./demo_custom/sushi_counter_plate.jpg",
+        "caption": "Style: Photorealistic. A scene of a sushi plate on a counter, featuring lacquer tray, soy dish, ginger, chopsticks, and shallow restaurant lighting. The camera moves forward, revealing the main object texture. The camera then moves right while panning left, revealing the rim, table surface, and surrounding props.",
+        "action_seq": [
+            "w",
+            "dj"
+        ],
+        "action_speed_list": [
+            4,
+            6
+        ]
+    },
+    {
+        "task_id": "custom_varied_081",
+        "image_path": "./demo_custom/bookstore_cafe.jpg",
+        "caption": "Style: Photorealistic. A scene of a small bookstore cafe, featuring wood shelves, round tables, pendant lights, plants, and a street window. The camera moves forward, revealing the main furniture and window light. The camera then panning left, revealing details on the left side of the room. The camera then panning right, revealing objects and surfaces on the right side.",
+        "action_seq": [
+            "w",
+            "j",
+            "l"
+        ],
+        "action_speed_list": [
+            4,
+            5,
+            5
+        ]
+    }
+]
