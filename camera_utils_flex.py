@@ -51,6 +51,8 @@ def _make_output(c2ws_left, c2ws_right, T_latent):
     K = torch.zeros(T_latent, 3, 3)
     K[:, 0, 0] = fx_norm
     K[:, 1, 1] = fy_norm
+    K[:, 0, 2] = 0.5
+    K[:, 1, 2] = 0.5
     K[:, 2, 2] = 1.0
 
     timestep = torch.arange(T_latent, dtype=torch.long)

@@ -11,6 +11,7 @@ einops>=0.8.0
 scipy>=1.14.0
 numpy>=1.26.0
 Pillow>=11.0.0
+av>=14.0.0
 
 # Optional: faster attention (recommended)
 # flash-attn>=2.7.0

@@ -98,6 +98,24 @@ def retrieve_timesteps(
     return timesteps, num_inference_steps
 
 
+def scheduler_with_flow_shift(
+    scheduler: FlowMatchEulerDiscreteScheduler, shift: Optional[float]
+) -> FlowMatchEulerDiscreteScheduler:
+    """Return a scheduler whose complete sigma range uses the requested shift."""
+    if shift is None:
+        return scheduler
+    if isinstance(shift, bool) or not isinstance(shift, (int, float)):
+        raise TypeError(f"`shift` must be a finite positive number, but got {shift!r}.")
+    shift = float(shift)
+    if not math.isfinite(shift) or shift <= 0:
+        raise ValueError(f"`shift` must be a finite positive number, but got {shift!r}.")
+
+    configured_shift = float(getattr(scheduler.config, "shift", scheduler.shift))
+    if configured_shift == shift:
+        return scheduler
+    return FlowMatchEulerDiscreteScheduler.from_config(scheduler.config, shift=shift)
+
+
 def resize_mask(mask, latent, process_first_frame_only=True):
     latent_size = latent.size()
     batch_size, channels, num_frames, height, width = mask.shape
@@ -533,11 +551,18 @@ class StereoWorldPipeline(DiffusionPipeline):
         max_sequence_length: int = 512,
         boundary: float = 0.875,
         comfyui_progressbar: bool = False,
-        shift: int = 5,
+        shift: Optional[float] = None,
+        clean_latents: Optional[torch.FloatTensor] = None,
+        denoise_mask: Optional[torch.Tensor] = None,
     ) -> Union[WanPipelineOutput, Tuple]:
         """
         Function invoked when calling the pipeline for generation.
         Args:
+            clean_latents (`torch.FloatTensor`, *optional*):
+                Full latent tensor containing values to preserve where `denoise_mask` is false.
+            denoise_mask (`torch.Tensor`, *optional*):
+                Boolean or binary `[B or 1, 1, T, 1, 1]` mask. False frames remain equal to
+                `clean_latents`; true frames are denoised. Must be provided with `clean_latents`.
 
         Examples:
 
@@ -562,6 +587,13 @@ class StereoWorldPipeline(DiffusionPipeline):
         self._guidance_scale = guidance_scale
         self._attention_kwargs = attention_kwargs
         self._interrupt = False
+
+        has_clean_latents = clean_latents is not None
+        has_denoise_mask = denoise_mask is not None
+        if has_clean_latents != has_denoise_mask:
+            raise ValueError("`clean_latents` and `denoise_mask` must be provided together")
+        if has_clean_latents and start_image is not None:
+            raise ValueError("`clean_latents`/`denoise_mask` cannot be combined with `start_image`")
 
         # 2. Default call parameters
         if prompt is not None and isinstance(prompt, str):
@@ -596,6 +628,9 @@ class StereoWorldPipeline(DiffusionPipeline):
             in_prompt_embeds = prompt_embeds
 
         # 4. Prepare timesteps
+        shifted_scheduler = scheduler_with_flow_shift(self.scheduler, shift)
+        if shifted_scheduler is not self.scheduler:
+            self.scheduler = shifted_scheduler
         timesteps, num_inference_steps = retrieve_timesteps(self.scheduler, num_inference_steps, device, timesteps, mu=1)
         self._num_timesteps = len(timesteps)
         
@@ -624,6 +659,62 @@ class StereoWorldPipeline(DiffusionPipeline):
             generator,
             latents,
         )
+
+        fixed_latents = None
+        expanded_denoise_mask = None
+        compact_denoise_mask = None
+        if has_clean_latents:
+            if not isinstance(clean_latents, torch.Tensor) or not clean_latents.is_floating_point():
+                raise TypeError("`clean_latents` must be a floating-point torch.Tensor")
+            if clean_latents.ndim != 5 or tuple(clean_latents.shape) != tuple(latents.shape):
+                raise ValueError(
+                    "`clean_latents` must have the same [B, C, T, H, W] shape as the denoising "
+                    f"latents; expected {tuple(latents.shape)}, got "
+                    f"{tuple(clean_latents.shape) if isinstance(clean_latents, torch.Tensor) else None}"
+                )
+            if not torch.isfinite(clean_latents).all().item():
+                raise ValueError("`clean_latents` must contain only finite values")
+            if not isinstance(denoise_mask, torch.Tensor):
+                raise TypeError("`denoise_mask` must be a torch.Tensor")
+            expected_mask_tail = (1, latents.shape[2], 1, 1)
+            if denoise_mask.ndim != 5 or tuple(denoise_mask.shape[1:]) != expected_mask_tail:
+                raise ValueError(
+                    "`denoise_mask` must have shape [B or 1, 1, T, 1, 1]; expected "
+                    f"[B or 1, {', '.join(map(str, expected_mask_tail))}], got "
+                    f"{tuple(denoise_mask.shape)}"
+                )
+            if denoise_mask.shape[0] not in (1, latents.shape[0]):
+                raise ValueError(
+                    "`denoise_mask` batch size must be 1 or match the latent batch size "
+                    f"({latents.shape[0]}), got {denoise_mask.shape[0]}"
+                )
+            if denoise_mask.dtype != torch.bool:
+                if not torch.isfinite(denoise_mask).all().item():
+                    raise ValueError("`denoise_mask` must contain only finite values")
+                is_binary = torch.logical_or(denoise_mask == 0, denoise_mask == 1)
+                if not is_binary.all().item():
+                    raise ValueError("`denoise_mask` must be boolean or contain only 0 and 1")
+
+            spatial_compression = int(self.vae.config.spatial_compression_ratio)
+            patch_size = tuple(int(value) for value in self.transformer.config.patch_size)
+            if spatial_compression < 16:
+                raise NotImplementedError(
+                    "Clean-latent masking currently requires a VAE spatial compression ratio >= 16"
+                )
+            if patch_size[0] != 1:
+                raise NotImplementedError(
+                    "Clean-latent masking currently requires transformer temporal patch size 1"
+                )
+            if latents.shape[3] % patch_size[1] or latents.shape[4] % patch_size[2]:
+                raise ValueError("Latent spatial dimensions must align with transformer patch sizes")
+
+            fixed_latents = clean_latents.to(device=device, dtype=latents.dtype)
+            compact_denoise_mask = denoise_mask.to(device=device, dtype=torch.bool)
+            compact_denoise_mask = compact_denoise_mask.expand(latents.shape[0], -1, -1, -1, -1)
+            expanded_denoise_mask = compact_denoise_mask.expand(
+                -1, 1, -1, latents.shape[3], latents.shape[4]
+            )
+            latents = torch.where(expanded_denoise_mask, latents, fixed_latents)
         if comfyui_progressbar:
             pbar.update(1)
 
@@ -732,6 +823,18 @@ class StereoWorldPipeline(DiffusionPipeline):
                 latent_model_input = torch.cat([latents] * 2) if do_classifier_free_guidance else latents
                 if hasattr(self.scheduler, "scale_model_input"):
                     latent_model_input = self.scheduler.scale_model_input(latent_model_input, t)
+                if expanded_denoise_mask is not None:
+                    model_mask = (
+                        torch.cat([expanded_denoise_mask] * 2)
+                        if do_classifier_free_guidance
+                        else expanded_denoise_mask
+                    )
+                    model_fixed_latents = (
+                        torch.cat([fixed_latents] * 2)
+                        if do_classifier_free_guidance
+                        else fixed_latents
+                    )
+                    latent_model_input = torch.where(model_mask, latent_model_input, model_fixed_latents)
 
                 # Concat raymap on channel dim if provided
                 if raymap is not None:
@@ -765,7 +868,24 @@ class StereoWorldPipeline(DiffusionPipeline):
               
 
                 # broadcast to batch dimension in a way that's compatible with ONNX/Core ML
-                if self.vae.spatial_compression_ratio >= 16:
+                if compact_denoise_mask is not None:
+                    patch_size = tuple(int(value) for value in self.transformer.config.patch_size)
+                    tokens_per_frame = (
+                        (latents.shape[3] // patch_size[1])
+                        * (latents.shape[4] // patch_size[2])
+                    )
+                    token_mask = compact_denoise_mask[:, 0, :, 0, 0].repeat_interleave(
+                        tokens_per_frame, dim=1
+                    )
+                    timestep = token_mask.to(dtype=t.dtype) * t
+                    if timestep.shape[1] < seq_len:
+                        padding = timestep.new_ones(
+                            timestep.shape[0], seq_len - timestep.shape[1]
+                        ) * t
+                        timestep = torch.cat([timestep, padding], dim=1)
+                    if do_classifier_free_guidance:
+                        timestep = torch.cat([timestep] * 2)
+                elif self.vae.spatial_compression_ratio >= 16:
                     temp_ts = ((mask[0][0][:, ::2, ::2]) * t).flatten()
                     temp_ts = torch.cat([
                         temp_ts,
@@ -805,8 +925,9 @@ class StereoWorldPipeline(DiffusionPipeline):
                 # compute the previous noisy sample x_t -> x_t-1
                 latents = self.scheduler.step(noise_pred, t, latents, **extra_step_kwargs, return_dict=False)[0]
 
-
-                if self.vae.spatial_compression_ratio >= 16 and mask[:, :, 1, :, :].any():
+                if expanded_denoise_mask is not None:
+                    latents = torch.where(expanded_denoise_mask, latents, fixed_latents)
+                elif self.vae.spatial_compression_ratio >= 16 and mask[:, :, 1, :, :].any():
                     latents = (1 - mask) * start_image_latentes + mask * latents
 
                 if callback_on_step_end is not None:
@@ -818,6 +939,8 @@ class StereoWorldPipeline(DiffusionPipeline):
                     latents = callback_outputs.pop("latents", latents)
                     prompt_embeds = callback_outputs.pop("prompt_embeds", prompt_embeds)
                     negative_prompt_embeds = callback_outputs.pop("negative_prompt_embeds", negative_prompt_embeds)
+                    if expanded_denoise_mask is not None:
+                        latents = torch.where(expanded_denoise_mask, latents, fixed_latents)
 
                 if i == len(timesteps) - 1 or ((i + 1) > num_warmup_steps and (i + 1) % self.scheduler.order == 0):
                     progress_bar.update()

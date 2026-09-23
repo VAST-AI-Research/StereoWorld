@@ -65,7 +65,12 @@ parser.add_argument("--num_frames", type=int, default=81,
 parser.add_argument("--fps", type=int, default=16, help="FPS for output video")
 parser.add_argument("--num_inference_steps", type=int, default=50)
 parser.add_argument("--guidance_scale", type=float, default=3.0)
-parser.add_argument("--shift", type=float, default=3.0)
+parser.add_argument(
+    "--shift",
+    type=float,
+    default=3.0,
+    help="Flow-matching scheduler shift used for sampling",
+)
 parser.add_argument("--boundary", type=float, default=0.875)
 parser.add_argument("--seed", type=int, default=42)
 
@@ -150,6 +155,7 @@ text_encoder = UMT5EncoderModel.from_pretrained(
 print("Loading scheduler...")
 scheduler = FlowMatchEulerDiscreteScheduler.from_pretrained(
     os.path.join(pipeline_dir, "scheduler"))
+print(f"Scheduler flow shift requested for sampling: {args.shift}")
 
 print("Assembling pipeline...")
 pipeline = StereoWorldPipeline(
@@ -441,4 +447,3 @@ for i, job in enumerate(jobs):
         traceback.print_exc()
 
 print("\nAll done.")
-

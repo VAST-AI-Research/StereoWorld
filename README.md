@@ -43,7 +43,7 @@ The code is tested with CUDA 12.6 and PyTorch 2.4+. For faster attention, instal
 
 The teacher models are hosted in [Yang-Tian/StereoWorld](https://huggingface.co/Yang-Tian/StereoWorld).
 
-Download both teacher models:
+Download all released models:
 
 ```bash
 huggingface-cli download Yang-Tian/StereoWorld --local-dir weights
@@ -60,6 +60,11 @@ huggingface-cli download Yang-Tian/StereoWorld \
 # Flexible Stereo
 huggingface-cli download Yang-Tian/StereoWorld \
   --include "StereoWorldFlexModel/*" \
+  --local-dir weights
+
+# Fixed-Left View Inpainting
+huggingface-cli download Yang-Tian/StereoWorld \
+  --include "StereoWorldInpaintModel/*" \
   --local-dir weights
 ```
 
@@ -133,6 +138,27 @@ bash run_flex.sh \
 ```
 
 By default, the scripts use `ExpData/flex_demo_custom_eval.json`, which contains 77 prompt/action examples across four right-camera modes. The corresponding input images are included under `ExpData/flex_demo_custom/`.
+
+### Fixed-left View Inpainting
+
+The curated video inputs are bundled as `ExpData/view_inpaint/case1.mp4`
+through `case5.mp4`. Their camera settings are collected in
+`ExpData/view_inpaint_eval.json`. Download the inpainting model first:
+
+```bash
+huggingface-cli download Yang-Tian/StereoWorld \
+  --include "StereoWorldInpaintModel/*" \
+  --local-dir weights
+```
+
+Then run the batch demo on one GPU:
+
+```bash
+bash run_view_inpaint_single.sh
+```
+
+The default pipeline directory is `weights/StereoWorldInpaintModel`. Pass
+`--pipeline_dir /path/to/StereoWorldInpaintModel` to use another location.
 
 <details>
 <summary><b>Custom Inference</b> — batch/single-folder inference options (click to expand)</summary>

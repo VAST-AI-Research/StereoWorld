@@ -1,0 +1,100 @@
+[
+  {
+    "task_id": "view_inpaint_case1_depth_offset",
+    "scene_name": "case1_depth_offset",
+    "input_video": "./view_inpaint/case1.mp4",
+    "caption": "Several giant wooly mammoths approach treading through a snowy meadow, their long wooly fur lightly blows in the wind as they walk, snow covered trees and dramatic snow capped mountains in the distance, mid afternoon light with wispy clouds and a sun high in the distance creates a warm glow, the low camera view is stunning capturing the large furry mammal with beautiful photography, depth of field.",
+    "right_mode": "depth_offset",
+    "depth_offset": 4.0,
+    "vergence_deg": 15.0
+  },
+  {
+    "task_id": "view_inpaint_case1_converging",
+    "scene_name": "case1_converging",
+    "input_video": "./view_inpaint/case1.mp4",
+    "caption": "Several giant wooly mammoths approach treading through a snowy meadow, their long wooly fur lightly blows in the wind as they walk, snow covered trees and dramatic snow capped mountains in the distance, mid afternoon light with wispy clouds and a sun high in the distance creates a warm glow, the low camera view is stunning capturing the large furry mammal with beautiful photography, depth of field.",
+    "right_mode": "converging",
+    "start_baseline": 5.0,
+    "end_baseline": 1.5,
+    "start_vergence_deg": 10.0,
+    "end_vergence_deg": 35.0
+  },
+  {
+    "task_id": "view_inpaint_case2_depth_offset",
+    "scene_name": "case2_depth_offset",
+    "input_video": "./view_inpaint/case2.mp4",
+    "caption": "A movie trailer featuring the adventures of the 30 year old space man wearing a red wool knitted motorcycle helmet, blue sky, salt desert, cinematic style, shot on 35mm film, vivid colors.",
+    "right_mode": "depth_offset",
+    "depth_offset": 4.0,
+    "vergence_deg": 15.0
+  },
+  {
+    "task_id": "view_inpaint_case2_horizontal_offset",
+    "scene_name": "case2_horizontal_offset",
+    "input_video": "./view_inpaint/case2.mp4",
+    "caption": "A movie trailer featuring the adventures of the 30 year old space man wearing a red wool knitted motorcycle helmet, blue sky, salt desert, cinematic style, shot on 35mm film, vivid colors.",
+    "right_mode": "horizontal_offset",
+    "baseline": 4.0,
+    "vergence_deg": 15.0
+  },
+  {
+    "task_id": "view_inpaint_case3_horizontal_offset",
+    "scene_name": "case3_horizontal_offset",
+    "input_video": "./view_inpaint/case3.mp4",
+    "caption": "this close-up shot of a futuristic cybernetic german shepherd showcases its striking brown and black fur. its chest and head have robotic modifications while its eye is a striking black color with futuristic digital altercations. the dog's head is tilted slightly to the side, giving the impression of it looking regal and majestic. the neon background is blurred, drawing attention to the dog's striking appearance",
+    "right_mode": "horizontal_offset",
+    "baseline": 4.0,
+    "vergence_deg": 15.0
+  },
+  {
+    "task_id": "view_inpaint_case3_converging",
+    "scene_name": "case3_converging",
+    "input_video": "./view_inpaint/case3.mp4",
+    "caption": "this close-up shot of a futuristic cybernetic german shepherd showcases its striking brown and black fur. its chest and head have robotic modifications while its eye is a striking black color with futuristic digital altercations. the dog's head is tilted slightly to the side, giving the impression of it looking regal and majestic. the neon background is blurred, drawing attention to the dog's striking appearance",
+    "right_mode": "converging",
+    "start_baseline": 5.0,
+    "end_baseline": 1.5,
+    "start_vergence_deg": 10.0,
+    "end_vergence_deg": 35.0
+  },
+  {
+    "task_id": "view_inpaint_case4_depth_offset",
+    "scene_name": "case4_depth_offset",
+    "input_video": "./view_inpaint/case4.mp4",
+    "caption": "A serene lakeside cabin sits by the water’s edge, with a wooden dock extending into the lake where a rowboat is gently bobbing with the movement of the water.",
+    "right_mode": "depth_offset",
+    "depth_offset": 4.0,
+    "vergence_deg": 15.0
+  },
+  {
+    "task_id": "view_inpaint_case4_converging",
+    "scene_name": "case4_converging",
+    "input_video": "./view_inpaint/case4.mp4",
+    "caption": "A serene lakeside cabin sits by the water’s edge, with a wooden dock extending into the lake where a rowboat is gently bobbing with the movement of the water.",
+    "right_mode": "converging",
+    "start_baseline": 5.0,
+    "end_baseline": 1.5,
+    "start_vergence_deg": 10.0,
+    "end_vergence_deg": 35.0
+  },
+  {
+    "task_id": "view_inpaint_case5_depth_offset",
+    "scene_name": "case5_depth_offset",
+    "input_video": "./view_inpaint/case5.mp4",
+    "caption": "The Glenfinnan Viaduct is a historic railway bridge in Scotland, UK, that crosses over the west highland line between the towns of Mallaig and Fort William. It is a stunning sight as a steam train leaves the bridge, traveling over the arch-covered viaduct. The landscape is dotted with lush greenery and rocky mountains, creating a picturesque backdrop for the train journey. The sky is blue and the sun is shining, making for a beautiful day to explore this majestic spot.",
+    "right_mode": "depth_offset",
+    "depth_offset": 4.0,
+    "vergence_deg": 15.0
+  },
+  {
+    "task_id": "view_inpaint_case5_converging",
+    "scene_name": "case5_converging",
+    "input_video": "./view_inpaint/case5.mp4",
+    "caption": "The Glenfinnan Viaduct is a historic railway bridge in Scotland, UK, that crosses over the west highland line between the towns of Mallaig and Fort William. It is a stunning sight as a steam train leaves the bridge, traveling over the arch-covered viaduct. The landscape is dotted with lush greenery and rocky mountains, creating a picturesque backdrop for the train journey. The sky is blue and the sun is shining, making for a beautiful day to explore this majestic spot.",
+    "right_mode": "converging",
+    "start_baseline": 5.0,
+    "end_baseline": 1.5,
+    "start_vergence_deg": 10.0,
+    "end_vergence_deg": 35.0
+  }
+]
