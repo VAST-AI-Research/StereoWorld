@@ -15,6 +15,10 @@
 
 ![stereo demo](./imgs/output_stereo_demo.gif)
 
+### Fixed-Left View Inpainting
+
+![view inpainting demo](./imgs/v2_v3_v4_v6_combined.gif)
+
 ## Features
 
 - Camera-guided stereo video generation from a single RGB image.
