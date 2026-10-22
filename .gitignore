@@ -7,10 +7,6 @@ __pycache__/
 venv/
 .cache/
 
-# Internal scripts (not for release)
-*_inner.sh
-run_noray.sh
-
 # Runtime outputs
 output*/
 shell_logs/
@@ -22,9 +18,14 @@ weights/
 *.pth
 *.safetensors
 
-# Demo images are committed as JPEG to keep the repo small.
-# Large PNG/BMP/TIFF sources should stay local.
+# Ignore image outputs except the bundled paper example.
 *.png
 *.bmp
 *.tif
 *.tiff
+
+# Paper inference bundles the original lossless stereo sample.
+!examples/test_data/sample_0001/*.png
+*.egg-info/
+build/
+.venv-paper/
