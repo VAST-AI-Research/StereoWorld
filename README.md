@@ -4,6 +4,8 @@
 [![Website](imgs/badge-website.svg)](https://sunyangtian.github.io/StereoWorld-web/)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-yellow)](https://huggingface.co/Yang-Tian/StereoWorld)
 
+> This `main` branch is an actively evolving open-source project based on the original StereoWorld implementation. If you are interested in the implementation details of the original paper version, please refer to the [`paper` branch](https://github.com/VAST-AI-Research/StereoWorld/tree/paper).
+
 
 ## Demo Gallery
 
