@@ -17,6 +17,21 @@ hf download Yang-Tian/StereoWorldModelPub \
   --local-dir weights/paper
 ```
 
+## Row-attention variant
+
+The `train_withRay_rowframe` checkpoint uses row attention with the layout
+`(b h) (f v w)`, where `f` denotes latent timesteps, `v` the stereo views, and
+`w` the spatial columns. Attention therefore includes tokens from different
+timesteps within each spatial row. This variant was chosen because it showed
+better temporal consistency and generalization to in-the-wild scenes than
+strictly per-frame row attention, at an acceptable higher computational cost.
+
+If you are interested in the paper's original per-frame row-attention
+formulation, it can be readily implemented in the
+[current processor](Diff-Factory/src/diffactory/models/attention_processor/wan_prope_row.py#L205)
+by changing the row branch to `(b f h) (v w)` and updating the output reshape
+accordingly.
+
 ## Run the example
 
 The example inputs are included in `examples/test_data/sample_0001`.
